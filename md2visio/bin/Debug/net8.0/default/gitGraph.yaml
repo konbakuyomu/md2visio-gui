@@ -1,0 +1,18 @@
+config:
+    # mermaid.mermaidAPI.defaultConfig.gitGraph
+    gitGraph:
+        useMaxWidth: true
+        titleTopMargin: 25
+        diagramPadding: 8
+        nodeLabel:
+          width: 75
+          height: 100
+          x: -25
+          'y': 0
+        mainBranchName: main
+        mainBranchOrder: 0
+        showCommitLabel: true
+        showBranches: true
+        rotateCommitLabel: true
+        parallelCommits: false
+        arrowMarkerAbsolute: false

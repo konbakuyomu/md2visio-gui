@@ -1,0 +1,11 @@
+config:
+    # mermaid.mermaidAPI.defaultConfig.sankey
+    sankey:
+        useMaxWidth: true
+        width: 600
+        height: 400
+        linkColor: gradient
+        nodeAlignment: justify
+        showValues: true
+        prefix: ''
+        suffix: ''

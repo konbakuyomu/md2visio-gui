@@ -1,0 +1,247 @@
+config:
+    theme: "base"
+    themeVariables:
+        darkMode: true
+        background: '#f4f4f4'
+        primaryColor: '#fff4dd'
+        noteBkgColor: '#fff5ad'
+        noteTextColor: '#333'
+        THEME_COLOR_LIMIT: 12
+        fontFamily: '"trebuchet ms", verdana, arial, sans-serif'
+        fontSize: 16px
+        primaryTextColor: '#eee'
+        secondaryColor: hsl(-79.4117647059, 100%, 93.3333333333%)
+        tertiaryColor: hsl(220.5882352941, 100%, 98.3333333333%)
+        primaryBorderColor: hsl(40.5882352941, 60%, 100%)
+        secondaryBorderColor: hsl(-79.4117647059, 60%, 100%)
+        tertiaryBorderColor: hsl(220.5882352941, 60%, 100%)
+        noteBorderColor: hsl(52.6829268293, 60%, 93.9215686275%)
+        secondaryTextColor: rgb(11.0000000001, 34.0000000002, 0)
+        tertiaryTextColor: rgb(8.5000000002, 5.7500000001, 0)
+        lineColor: '#0b0b0b'
+        arrowheadColor: '#0b0b0b'
+        textColor: '#eee'
+        border2: hsl(220.5882352941, 60%, 100%)
+        nodeBkg: '#fff4dd'
+        mainBkg: '#fff4dd'
+        nodeBorder: hsl(40.5882352941, 60%, 100%)
+        clusterBkg: hsl(220.5882352941, 100%, 98.3333333333%)
+        clusterBorder: hsl(220.5882352941, 60%, 100%)
+        defaultLinkColor: '#0b0b0b'
+        titleColor: rgb(8.5000000002, 5.7500000001, 0)
+        edgeLabelBackground: hsl(-79.4117647059, 100%, 63.3333333333%)
+        nodeTextColor: '#eee'
+        actorBorder: hsl(40.5882352941, 60%, 100%)
+        actorBkg: '#fff4dd'
+        actorTextColor: '#eee'
+        actorLineColor: hsl(40.5882352941, 60%, 100%)
+        labelBoxBkgColor: '#fff4dd'
+        signalColor: '#eee'
+        signalTextColor: '#eee'
+        labelBoxBorderColor: hsl(40.5882352941, 60%, 100%)
+        labelTextColor: '#eee'
+        loopTextColor: '#eee'
+        activationBorderColor: hsl(-79.4117647059, 100%, 83.3333333333%)
+        activationBkgColor: hsl(-79.4117647059, 100%, 93.3333333333%)
+        sequenceNumberColor: '#f4f4f4'
+        sectionBkgColor: hsl(220.5882352941, 100%, 98.3333333333%)
+        altSectionBkgColor: white
+        sectionBkgColor2: '#fff4dd'
+        excludeBkgColor: '#eeeeee'
+        taskBorderColor: hsl(40.5882352941, 60%, 100%)
+        taskBkgColor: '#fff4dd'
+        activeTaskBorderColor: '#fff4dd'
+        activeTaskBkgColor: hsl(40.5882352941, 100%, 100%)
+        gridColor: lightgrey
+        doneTaskBkgColor: lightgrey
+        doneTaskBorderColor: grey
+        critBorderColor: '#ff8888'
+        critBkgColor: red
+        todayLineColor: red
+        taskTextColor: '#eee'
+        taskTextOutsideColor: '#eee'
+        taskTextLightColor: '#eee'
+        taskTextDarkColor: '#eee'
+        taskTextClickableColor: '#003163'
+        personBorder: hsl(40.5882352941, 60%, 100%)
+        personBkg: '#fff4dd'
+        rowOdd: hsl(40.5882352941, 100%, 88.3333333333%)
+        rowEven: hsl(40.5882352941, 100%, 83.3333333333%)
+        transitionColor: '#0b0b0b'
+        transitionLabelColor: '#eee'
+        stateLabelColor: '#eee'
+        stateBkg: '#fff4dd'
+        labelBackgroundColor: '#fff4dd'
+        compositeBackground: '#f4f4f4'
+        altBackground: hsl(220.5882352941, 100%, 98.3333333333%)
+        compositeTitleBackground: '#fff4dd'
+        compositeBorder: hsl(40.5882352941, 60%, 100%)
+        innerEndBackground: hsl(40.5882352941, 60%, 100%)
+        errorBkgColor: hsl(220.5882352941, 100%, 98.3333333333%)
+        errorTextColor: rgb(8.5000000002, 5.7500000001, 0)
+        specialStateColor: '#0b0b0b'
+        cScale0: hsl(40.5882352941, 100%, 18.3333333333%)
+        cScale1: hsl(-79.4117647059, 100%, 18.3333333333%)
+        cScale2: hsl(220.5882352941, 100%, 23.3333333333%)
+        cScale3: hsl(70.5882352941, 100%, 18.3333333333%)
+        cScale4: hsl(100.5882352941, 100%, 18.3333333333%)
+        cScale5: hsl(130.5882352941, 100%, 18.3333333333%)
+        cScale6: hsl(160.5882352941, 100%, 18.3333333333%)
+        cScale7: hsl(190.5882352941, 100%, 18.3333333333%)
+        cScale8: hsl(250.5882352941, 100%, 25%)
+        cScale9: hsl(310.5882352941, 100%, 18.3333333333%)
+        cScale10: hsl(340.5882352941, 100%, 18.3333333333%)
+        cScale11: hsl(10.5882352941, 100%, 18.3333333333%)
+        cScaleInv0: rgb(161.5000000002, 191.7500000001, 255)
+        cScaleInv1: rgb(191.7500000001, 255, 161.5000000002)
+        cScaleInv2: rgb(255, 216.5, 136.0000000002)
+        cScaleInv3: rgb(178.0000000001, 161.5000000002, 255)
+        cScaleInv4: rgb(224.75, 161.5000000002, 255)
+        cScaleInv5: rgb(255, 161.5000000002, 238.5000000001)
+        cScaleInv6: rgb(255, 161.5000000002, 191.7500000001)
+        cScaleInv7: rgb(255, 178.0000000001, 161.5000000002)
+        cScaleInv8: rgb(232.5, 255, 127.5)
+        cScaleInv9: rgb(161.5000000002, 255, 178.0000000001)
+        cScaleInv10: rgb(161.5000000002, 255, 224.75)
+        cScaleInv11: rgb(161.5000000002, 238.5000000001, 255)
+        cScalePeer0: hsl(40.5882352941, 100%, 28.3333333333%)
+        cScalePeer1: hsl(-79.4117647059, 100%, 28.3333333333%)
+        cScalePeer2: hsl(220.5882352941, 100%, 33.3333333333%)
+        cScalePeer3: hsl(70.5882352941, 100%, 28.3333333333%)
+        cScalePeer4: hsl(100.5882352941, 100%, 28.3333333333%)
+        cScalePeer5: hsl(130.5882352941, 100%, 28.3333333333%)
+        cScalePeer6: hsl(160.5882352941, 100%, 28.3333333333%)
+        cScalePeer7: hsl(190.5882352941, 100%, 28.3333333333%)
+        cScalePeer8: hsl(250.5882352941, 100%, 35%)
+        cScalePeer9: hsl(310.5882352941, 100%, 28.3333333333%)
+        cScalePeer10: hsl(340.5882352941, 100%, 28.3333333333%)
+        cScalePeer11: hsl(10.5882352941, 100%, 28.3333333333%)
+        scaleLabelColor: '#eee'
+        cScaleLabel0: '#eee'
+        cScaleLabel1: '#eee'
+        cScaleLabel2: '#eee'
+        cScaleLabel3: '#eee'
+        cScaleLabel4: '#eee'
+        cScaleLabel5: '#eee'
+        cScaleLabel6: '#eee'
+        cScaleLabel7: '#eee'
+        cScaleLabel8: '#eee'
+        cScaleLabel9: '#eee'
+        cScaleLabel10: '#eee'
+        cScaleLabel11: '#eee'
+        surface0: hsl(220.5882352941, 85%, 73.3333333333%)
+        surfacePeer0: hsl(220.5882352941, 85%, 61.3333333333%)
+        surface1: hsl(220.5882352941, 85%, 61.3333333333%)
+        surfacePeer1: hsl(220.5882352941, 85%, 49.3333333333%)
+        surface2: hsl(220.5882352941, 85%, 49.3333333333%)
+        surfacePeer2: hsl(220.5882352941, 85%, 37.3333333333%)
+        surface3: hsl(220.5882352941, 85%, 37.3333333333%)
+        surfacePeer3: hsl(220.5882352941, 85%, 25.3333333333%)
+        surface4: hsl(220.5882352941, 85%, 25.3333333333%)
+        surfacePeer4: hsl(220.5882352941, 85%, 13.3333333333%)
+        classText: '#eee'
+        fillType0: '#fff4dd'
+        fillType1: hsl(-79.4117647059, 100%, 93.3333333333%)
+        fillType2: hsl(104.5882352941, 100%, 93.3333333333%)
+        fillType3: hsl(-15.4117647059, 100%, 93.3333333333%)
+        fillType4: hsl(-23.4117647059, 100%, 93.3333333333%)
+        fillType5: hsl(-143.4117647059, 100%, 93.3333333333%)
+        fillType6: hsl(168.5882352941, 100%, 93.3333333333%)
+        fillType7: hsl(48.5882352941, 100%, 93.3333333333%)
+        pie1: '#fff4dd'
+        pie2: hsl(-79.4117647059, 100%, 93.3333333333%)
+        pie3: hsl(220.5882352941, 100%, 98.3333333333%)
+        pie4: hsl(40.5882352941, 100%, 83.3333333333%)
+        pie5: hsl(-79.4117647059, 100%, 83.3333333333%)
+        pie6: hsl(220.5882352941, 100%, 88.3333333333%)
+        pie7: hsl(100.5882352941, 100%, 83.3333333333%)
+        pie8: hsl(-19.4117647059, 100%, 83.3333333333%)
+        pie9: hsl(160.5882352941, 100%, 93.3333333333%)
+        pie10: hsl(100.5882352941, 100%, 73.3333333333%)
+        pie11: hsl(-19.4117647059, 100%, 73.3333333333%)
+        pie12: hsl(160.5882352941, 100%, 83.3333333333%)
+        pieTitleTextSize: 25px
+        pieTitleTextColor: '#eee'
+        pieSectionTextSize: 17px
+        pieSectionTextColor: '#eee'
+        pieLegendTextSize: 17px
+        pieLegendTextColor: '#eee'
+        pieStrokeColor: black
+        pieStrokeWidth: 2px
+        pieOuterStrokeWidth: 2px
+        pieOuterStrokeColor: black
+        pieOpacity: '0.7'
+        archEdgeColor: '#777'
+        archEdgeArrowColor: '#777'
+        archEdgeWidth: '3'
+        archGroupBorderColor: '#000'
+        archGroupBorderWidth: 2px
+        quadrant1Fill: '#fff4dd'
+        quadrant2Fill: '#fff9e2'
+        quadrant3Fill: '#fffee7'
+        quadrant4Fill: '#ffffec'
+        quadrant1TextFill: '#eee'
+        quadrant2TextFill: '#e9e9e9'
+        quadrant3TextFill: '#e4e4e4'
+        quadrant4TextFill: '#dfdfdf'
+        quadrantPointFill: hsl(40.5882352941, 100%, NaN%)
+        quadrantPointTextFill: '#eee'
+        quadrantXAxisTextFill: '#eee'
+        quadrantYAxisTextFill: '#eee'
+        quadrantInternalBorderStrokeFill: hsl(40.5882352941, 60%, 100%)
+        quadrantExternalBorderStrokeFill: hsl(40.5882352941, 60%, 100%)
+        quadrantTitleFill: '#eee'
+        xyChart:
+          backgroundColor: '#f4f4f4'
+          titleColor: '#eee'
+          xAxisTitleColor: '#eee'
+          xAxisLabelColor: '#eee'
+          xAxisTickColor: '#eee'
+          xAxisLineColor: '#eee'
+          yAxisTitleColor: '#eee'
+          yAxisLabelColor: '#eee'
+          yAxisTickColor: '#eee'
+          yAxisLineColor: '#eee'
+          plotColorPalette: >-
+            #FFF4DD,#FFD8B1,#FFA07A,#ECEFF1,#D6DBDF,#C3E0A8,#FFB6A4,#FFD74D,#738FA7,#FFFFF0
+        requirementBackground: '#fff4dd'
+        requirementBorderColor: hsl(40.5882352941, 60%, 100%)
+        requirementBorderSize: '1'
+        requirementTextColor: '#eee'
+        relationColor: '#0b0b0b'
+        relationLabelBackground: hsl(-79.4117647059, 100%, 63.3333333333%)
+        relationLabelColor: '#eee'
+        git0: hsl(40.5882352941, 100%, 100%)
+        git1: hsl(-79.4117647059, 100%, 100%)
+        git2: hsl(220.5882352941, 100%, 100%)
+        git3: hsl(10.5882352941, 100%, 100%)
+        git4: hsl(-19.4117647059, 100%, 100%)
+        git5: hsl(-49.4117647059, 100%, 100%)
+        git6: hsl(100.5882352941, 100%, 100%)
+        git7: hsl(160.5882352941, 100%, 100%)
+        gitInv0: '#000000'
+        gitInv1: '#000000'
+        gitInv2: '#000000'
+        gitInv3: '#000000'
+        gitInv4: '#000000'
+        gitInv5: '#000000'
+        gitInv6: '#000000'
+        gitInv7: '#000000'
+        branchLabelColor: black
+        gitBranchLabel0: black
+        gitBranchLabel1: black
+        gitBranchLabel2: black
+        gitBranchLabel3: black
+        gitBranchLabel4: black
+        gitBranchLabel5: black
+        gitBranchLabel6: black
+        gitBranchLabel7: black
+        tagLabelColor: '#eee'
+        tagLabelBackground: '#fff4dd'
+        tagLabelBorder: hsl(40.5882352941, 60%, 100%)
+        tagLabelFontSize: 10px
+        commitLabelColor: rgb(11.0000000001, 34.0000000002, 0)
+        commitLabelBackground: hsl(-79.4117647059, 100%, 93.3333333333%)
+        commitLabelFontSize: 10px
+        attributeBackgroundColorOdd: '#ffffff'
+        attributeBackgroundColorEven: '#f2f2f2'

@@ -138,138 +138,6 @@
           }
         }
       }
-    },
-    "net8.0/win-x64": {
-      "Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime/17.13.40008": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.VisualStudio.Interop/17.13.40008": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime": "17.13.40008"
-        },
-        "compile": {
-          "lib/net8.0/Microsoft.VisualStudio.Interop.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/Microsoft.VisualStudio.Interop.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.Win32.SystemEvents/9.0.1": {
-        "type": "package",
-        "compile": {
-          "lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "runtimes/win/lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "buildTransitive/net8.0/_._": {}
-        }
-      },
-      "stdole/17.13.40008": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.VisualStudio.Interop": "17.13.40008"
-        },
-        "compile": {
-          "lib/net8.0/stdole.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/stdole.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "System.Drawing.Common/9.0.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Win32.SystemEvents": "9.0.1"
-        },
-        "compile": {
-          "lib/net8.0/System.Drawing.Common.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net8.0/System.Private.Windows.Core.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/System.Drawing.Common.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net8.0/System.Private.Windows.Core.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "buildTransitive/net8.0/_._": {}
-        }
-      },
-      "WonderCircuits.Microsoft.Office.Core/15.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/OFFICE.DLL": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/OFFICE.DLL": {}
-        }
-      },
-      "WonderCircuits.Microsoft.Office.Interop.Visio/15.0.0": {
-        "type": "package",
-        "dependencies": {
-          "WonderCircuits.Microsoft.Office.Core": "15.0.0",
-          "WonderCircuits.Microsoft.Vbe.Interop": "15.0.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/Interop.Microsoft.Office.Interop.Visio.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Interop.Microsoft.Office.Interop.Visio.dll": {}
-        }
-      },
-      "WonderCircuits.Microsoft.Vbe.Interop/15.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/Microsoft.Vbe.Interop.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Microsoft.Vbe.Interop.dll": {}
-        }
-      },
-      "YamlDotNet/16.3.0": {
-        "type": "package",
-        "compile": {
-          "lib/net8.0/YamlDotNet.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/YamlDotNet.dll": {
-            "related": ".xml"
-          }
-        }
-      }
     }
   },
   "libraries": {
@@ -565,31 +433,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
-            "version": "[8.0.17, 8.0.17]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Runtime.win-x64",
-            "version": "[8.0.17, 8.0.17]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
-            "version": "[8.0.17, 8.0.17]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
-      }
-    },
-    "runtimes": {
-      "win-x64": {
-        "#import": []
       }
     }
   }

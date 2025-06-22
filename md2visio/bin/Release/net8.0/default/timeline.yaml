@@ -1,0 +1,39 @@
+config:
+    # mermaid.mermaidAPI.defaultConfig.timeline
+    timeline:
+        useMaxWidth: true
+        diagramMarginX: 50
+        diagramMarginY: 10
+        leftMargin: 150
+        width: 150
+        height: 50
+        boxMargin: 10
+        boxTextMargin: 5
+        noteMargin: 10
+        messageMargin: 35
+        messageAlign: center
+        bottomMarginAdj: 1
+        rightAngles: false
+        taskFontSize: 14
+        taskFontFamily: '"Open Sans", sans-serif'
+        taskMargin: 50
+        activationWidth: 10
+        textPlacement: fo
+        actorColours:
+          - '#8FBC8F'
+          - '#7CFC00'
+          - '#00FFFF'
+          - '#20B2AA'
+          - '#B0E0E6'
+          - '#FFFFE0'
+        sectionFills:
+          - '#191970'
+          - '#8B008B'
+          - '#4B0082'
+          - '#2F4F4F'
+          - '#800000'
+          - '#8B4513'
+          - '#00008B'
+        sectionColours:
+          - '#fff'
+        disableMulticolor: false

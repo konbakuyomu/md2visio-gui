@@ -47,7 +47,7 @@ namespace md2visio.GUI.Forms
         {
             // 窗口设置
             Text = "md2visio - Mermaid 转 Visio 工具";
-            Size = new Size(800, 850);
+            Size = new Size(1250, 850);
             StartPosition = FormStartPosition.CenterScreen;
             MinimumSize = new Size(600, 500);
 
