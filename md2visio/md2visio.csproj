@@ -1,0 +1,95 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)'=='ConsoleRelease'">
+    <OutputType>Exe</OutputType>
+    <StartupObject>md2visio.main.ConsoleApp</StartupObject>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <PublishSingleFile>true</PublishSingleFile>
+    <SelfContained>true</SelfContained>
+    <PublishTrimmed>false</PublishTrimmed>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="mermaid\er\新文件夹\**" />
+    <EmbeddedResource Remove="mermaid\er\新文件夹\**" />
+    <None Remove="mermaid\er\新文件夹\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="stdole" Version="17.13.40008" />
+    <PackageReference Include="System.Drawing.Common" Version="9.0.1" />
+    <PackageReference Include="WonderCircuits.Microsoft.Office.Interop.Visio" Version="15.0.0" />
+    <PackageReference Include="YamlDotNet" Version="16.3.0" />
+  </ItemGroup>
+
+
+
+  <ItemGroup>
+    <Folder Include="mermaid\class\" />
+    <Folder Include="mermaid\sta\" />
+    <Folder Include="mermaid\seq\" />
+    <Folder Include="mermaid\sta2\" />
+    <Folder Include="mermaid\gantt\" />
+    <Folder Include="mermaid\req\" />
+    <Folder Include="mermaid\git\" />
+    <Folder Include="mermaid\c4\" />
+    <Folder Include="mermaid\er\" />
+    <Folder Include="mermaid\qua\" />
+    <Folder Include="mermaid\time\" />
+    <Folder Include="mermaid\zen\" />
+    <Folder Include="mermaid\san\" />
+    <Folder Include="mermaid\mind\" />
+    <Folder Include="mermaid\block\" />
+    <Folder Include="mermaid\kanban\" />
+    <Folder Include="mermaid\arc\" />
+    <Folder Include="struc\qua\" />
+    <Folder Include="struc\req\" />
+    <Folder Include="struc\san\" />
+    <Folder Include="struc\seq\" />
+    <Folder Include="struc\sta2\" />
+    <Folder Include="struc\sta\" />
+    <Folder Include="struc\time\" />
+    <Folder Include="struc\zen\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\md2visio.vssx">
+      <Link>md2visio.vssx</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+    </None>
+    <None Include="default\**\*">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+    </None>
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="xcopy /Y /F D:\visio转换\md2visio.vssx D:\visio转换\md2visio" />
+  </Target>
+
+</Project>

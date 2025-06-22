@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "md2visio": {
+      "commandName": "Project",
+      "commandLineArgs": "/I D:\\visio转换\\test.md /O D:\\visio转换 /V"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+config:
+    # mermaid.mermaidAPI.defaultConfig.packet
+    packet:
+        useMaxWidth: true
+        rowHeight: 32
+        bitWidth: 32
+        bitsPerRow: 32
+        showBits: true
+        paddingX: 5
+        paddingY: 5

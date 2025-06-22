@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>md2visio</id>
+    <version>1.0.0</version>
+    <authors>md2visio</authors>
+    <description>Package Description</description>
+    <repository type="git" commit="f869b1b4174f823800b1a579957872ccdc479f75" />
+    <dependencies>
+      <group targetFramework="net8.0">
+        <dependency id="System.Drawing.Common" version="9.0.1" exclude="Build,Analyzers" />
+        <dependency id="WonderCircuits.Microsoft.Office.Interop.Visio" version="15.0.0" exclude="Build,Analyzers" />
+        <dependency id="YamlDotNet" version="16.3.0" exclude="Build,Analyzers" />
+        <dependency id="stdole" version="17.13.40008" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="D:\visio转换\md2visio\md2visio\bin\Debug\net8.0\md2visio.runtimeconfig.json" target="lib\net8.0\md2visio.runtimeconfig.json" />
+    <file src="D:\visio转换\md2visio\md2visio\bin\Debug\net8.0\md2visio.dll" target="lib\net8.0\md2visio.dll" />
+  </files>
+</package>

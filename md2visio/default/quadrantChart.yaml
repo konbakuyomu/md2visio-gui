@@ -1,0 +1,22 @@
+config:
+    # mermaid.mermaidAPI.defaultConfig.quadrantChart
+    quadrantChart:
+        useMaxWidth: true
+        chartWidth: 500
+        chartHeight: 500
+        titleFontSize: 20
+        titlePadding: 10
+        quadrantPadding: 5
+        xAxisLabelPadding: 5
+        yAxisLabelPadding: 5
+        xAxisLabelFontSize: 16
+        yAxisLabelFontSize: 16
+        quadrantLabelFontSize: 16
+        quadrantTextTopPadding: 5
+        pointTextPadding: 5
+        pointLabelFontSize: 12
+        pointRadius: 5
+        xAxisPosition: top
+        yAxisPosition: left
+        quadrantInternalBorderStrokeWidth: 1
+        quadrantExternalBorderStrokeWidth: 2
