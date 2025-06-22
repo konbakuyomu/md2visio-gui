@@ -339,13 +339,14 @@ namespace md2visio.GUI.Forms
             var container = new TableLayoutPanel
             {
                 Dock = DockStyle.Fill,
-                ColumnCount = 5,
+                ColumnCount = 6,
                 RowCount = 2
             };
             container.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 180));
             container.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 180));
             container.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 180));
             container.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 180));
+            container.ColumnStyles.Add(new ColumnStyle(SizeType.AutoSize));
             container.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100));
             container.RowStyles.Add(new RowStyle(SizeType.Absolute, 40));
             container.RowStyles.Add(new RowStyle(SizeType.Percent, 100));
@@ -408,8 +409,22 @@ namespace md2visio.GUI.Forms
             container.Controls.Add(_openOutputButton, 2, 0);
             container.Controls.Add(exitButton, 3, 0);
             container.Controls.Add(_statusLabel, 4, 0);
+
+            var authorLabel = new LinkLabel
+            {
+                Text = "© konbakuyomu",
+                Dock = DockStyle.Fill,
+                TextAlign = ContentAlignment.MiddleRight,
+                Font = new Font("Microsoft YaHei UI", 9)
+            };
+            authorLabel.Links.Add(0, authorLabel.Text.Length, "https://github.com/konbakuyomu/md2visio-gui/");
+            authorLabel.LinkClicked += (s, e) => {
+                Process.Start(new ProcessStartInfo(e.Link.LinkData.ToString()) { UseShellExecute = true });
+            };
+
+            container.Controls.Add(authorLabel, 5, 0);
             container.Controls.Add(_progressBar, 0, 1);
-            container.SetColumnSpan(_progressBar, 5);
+            container.SetColumnSpan(_progressBar, 6);
 
             parent.Controls.Add(container, 0, row);
         }
