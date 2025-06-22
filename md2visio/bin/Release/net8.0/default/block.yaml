@@ -1,5 +1,0 @@
-config:
-    # mermaid.mermaidAPI.defaultConfig.block
-    block:
-        useMaxWidth: true
-        padding: 8

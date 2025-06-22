@@ -1,7 +1,0 @@
-config:
-    # mermaid.mermaidAPI.defaultConfig.kanban
-    kanban:
-        useMaxWidth: true
-        padding: 8
-        sectionWidth: 200
-        ticketBaseUrl: ''
