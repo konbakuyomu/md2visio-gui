@@ -1,0 +1,104 @@
+config:
+    theme: "default"  
+    themeVariables:
+        # Theme Variables
+        darkMode: false                 # Affects how derived colors are "calculated". Set value to true for dark mode.
+        background: "white"             # Used to calculate color for items that should either be background colored or contrasting to the background
+        fontFamily: "trebuchet ms, verdana, arial"
+        fontSize: "16px"                # Font size in pixels
+        primaryColor: "#ECECFF"         # Color to be used as background in nodes, other colors will be derived from this
+        primaryTextColor: "#131300"     # Color to be used as text color in nodes using primaryColor
+        secondaryColor: "#ffffde"    
+        primaryBorderColor: "hsl(240, 60%, 86.2745098039%)"          # Color to be used as border in nodes using primaryColor
+        secondaryBorderColor: "hsl(60, 60%, 83.5294117647%)"         # Color to be used as border in nodes using secondaryColor
+        secondaryTextColor: "#000021"                                # Color to be used as text color in nodes using secondaryColor
+        tertiaryColor: "hsl(80, 100%, 96.2745098039%)"    
+        tertiaryBorderColor: "hsl(80, 60%, 86.2745098039%)"          # Color to be used as border in nodes using tertiaryColor
+        tertiaryTextColor: "rgb(6.3333333334, 0, 19.0000000001)"     # Color to be used as text color in nodes using tertiaryColor
+        noteBkgColor: "#fff5ad"                                      # Color used as background in notes
+        noteTextColor: "black"                                       # Text color in note rectangles
+        noteBorderColor: "#aaaa33"                                   # Border color in note rectangles
+        lineColor: "#333333"    
+        textColor: "#333"               # Text in diagram over the background for instance text on labels and on signals in sequence diagram or the title in Gantt diagram
+        mainBkg: "#ECECFF"              # Background in flowchart objects like rects/circles, class diagram classes, sequence diagram etc
+        errorBkgColor: "#552222"        # Color for syntax error message
+        errorTextColor: "#552222"       # Color for syntax error message
+        
+        # Flowchart Variables
+        nodeBorder: "#9370DB"           # Node Border Color
+        clusterBkg: "#ffffde"           # Background in subgraphs
+        clusterBorder: "#aaaa33"        # Cluster Border Color
+        defaultLinkColor: "#333333"     # Link Color
+        titleColor: "#333"              # Title Color
+        edgeLabelBackground: "rgba(232,232,232, 0.8)" 
+        
+        # Sequence Diagram Variables
+        actorBkg: "#ECECFF"                                                         # Actor Background Color
+        actorBorder: "hsl(259.6261682243, 59.7765363128%, 87.9019607843%)"          # Actor Border Color
+        actorTextColor: "black"         # Actor Text Color
+        actorLineColor: "hsl(259.6261682243, 59.7765363128%, 87.9019607843%)"       # Actor Line Color
+        signalColor: "#333"             # Signal Color
+        signalTextColor: "#333"         # Signal Text Color
+        labelBoxBkgColor: "#ECECFF"     # Label Box Background Color
+        labelBoxBorderColor: "hsl(259.6261682243, 59.7765363128%, 87.9019607843%)"  # Label Box Border Color
+        labelTextColor: "black"         # Label Text Color
+        loopTextColor: "black"          # Loop Text Color
+        activationBorderColor: "#666"   # Activation Border Color
+        activationBkgColor: "#f4f4f4"   # Activation Background Color
+        sequenceNumberColor: "white"    # Sequence Number Color
+        
+        # Pie Diagram Variables        
+        pie1: '#ECECFF'	                        # Fill for 1st section in pie diagram
+        pie2: '#ffffde'	                        # Fill for 2nd section in pie diagram
+        pie3: 'hsl(80, 100%, 56.2745098039%)'	  # Fill for 3rd section in pie diagram
+        pie4: 'hsl(240, 100%, 86.2745098039%)'	# Fill for 4th section in pie diagram
+        pie5: 'hsl(60, 100%, 63.5294117647%)'	  # Fill for 5th section in pie diagram
+        pie6: 'hsl(80, 100%, 76.2745098039%)'	  # Fill for 6th section in pie diagram
+        pie7: 'hsl(300, 100%, 76.2745098039%)'	# Fill for 7th section in pie diagram
+        pie8: 'hsl(180, 100%, 56.2745098039%)'	# Fill for 8th section in pie diagram
+        pie9: 'hsl(0, 100%, 56.2745098039%)'	  # Fill for 9th section in pie diagram
+        pie10: 'hsl(300, 100%, 56.2745098039%)'	# Fill for 10th section in pie diagram
+        pie11: 'hsl(150, 100%, 56.2745098039%)'	# Fill for 11th section in pie diagram
+        pie12: 'hsl(0, 100%, 66.2745098039%)'	  # Fill for 12th section in pie diagram
+        pieLegendTextColor: "black"	    # Text color of labels in diagram legend
+        pieLegendTextSize: "17px"	      # Text size of labels in diagram legend
+        pieOpacity: "0.7"	              # Opacity of individual pie sections
+        pieOuterStrokeColor: "black"	  # Border color of pie diagram"s outer circle
+        pieOuterStrokeWidth: "2px"	    # Border width of pie diagram"s outer circle
+        pieSectionTextColor: "#333"	    # Text color of individual section labels
+        pieSectionTextSize: "17px"	    # Text size of individual section labels
+        pieStrokeColor: "black"	        # Border color of individual pie sections
+        pieStrokeWidth: "2px"	          # Border width of individual pie sections
+        pieTitleTextColor: "black"	    # Title text color
+        pieTitleTextSize: "25px"	      # Title text size
+        
+        # State Colors
+        labelColor: "black" 
+        altBackground: "#f0f0f0"        # Used for background in deep composite states
+        
+        # Class Colors
+        classText: "#131300"            # Color of Text in class diagrams
+        
+        # User Journey Colors
+        fillType0: "#ECECFF"	                      # Fill for 1st section in journey diagram
+        fillType1: "#ffffde"	                      # Fill for 2nd section in journey diagram
+        fillType2: "hsl(304, 100%, 96.2745098039%)"	# Fill for 3rd section in journey diagram
+        fillType3: "hsl(124, 100%, 93.5294117647%)"	# Fill for 4th section in journey diagram
+        fillType4: "hsl(176, 100%, 96.2745098039%)"	# Fill for 5th section in journey diagram
+        fillType5: "hsl(-4, 100%, 93.5294117647%)"	# Fill for 6th section in journey diagram
+        fillType6: "hsl(8, 100%, 96.2745098039%)"	  # Fill for 7th section in journey diagram
+        fillType7: "hsl(188, 100%, 93.5294117647%)"	# Fill for 8th section in journey diagram    
+    
+        xyChart:
+            backgroundColor: 'white'
+            titleColor: '#131300'
+            xAxisTitleColor: '#131300'
+            xAxisLabelColor: '#131300'
+            xAxisTickColor: '#131300'
+            xAxisLineColor: '#131300'
+            yAxisTitleColor: '#131300'
+            yAxisLabelColor: '#131300'
+            yAxisTickColor: '#131300'
+            yAxisLineColor: '#131300'
+            plotColorPalette: >-
+              #ECECFF,#8493A6,#FFC3A0,#DCDDE1,#B8E994,#D1A36F,#C3CDE6,#FFB6C1,#496078,#F8F3E3

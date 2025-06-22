@@ -1,0 +1,15 @@
+config:
+    flowchart:
+        useMaxWidth: true
+        titleTopMargin: 25
+        subGraphTitleMargin:
+          top: 0
+          bottom: 0
+        diagramPadding: 8
+        htmlLabels: true
+        nodeSpacing: 50
+        rankSpacing: 50
+        curve: basis
+        padding: 15
+        defaultRenderer: dagre-wrapper
+        wrappingWidth: 200

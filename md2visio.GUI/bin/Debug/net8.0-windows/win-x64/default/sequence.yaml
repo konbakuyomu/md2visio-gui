@@ -1,0 +1,35 @@
+config:
+    # mermaid.mermaidAPI.defaultConfig.sequence
+    sequence:
+        useMaxWidth: true
+        hideUnusedParticipants: false
+        activationWidth: 10
+        diagramMarginX: 50
+        diagramMarginY: 10
+        actorMargin: 50
+        width: 150
+        height: 65
+        boxMargin: 10
+        boxTextMargin: 5
+        noteMargin: 10
+        messageMargin: 35
+        messageAlign: center
+        mirrorActors: true
+        forceMenus: false
+        bottomMarginAdj: 1
+        rightAngles: false
+        showSequenceNumbers: false
+        actorFontSize: 14
+        actorFontFamily: '"Open Sans", sans-serif'
+        actorFontWeight: 400
+        noteFontSize: 14
+        noteFontFamily: '"trebuchet ms", verdana, arial, sans-serif'
+        noteFontWeight: 400
+        noteAlign: center
+        messageFontSize: 16
+        messageFontFamily: '"trebuchet ms", verdana, arial, sans-serif'
+        messageFontWeight: 400
+        wrap: false
+        wrapPadding: 10
+        labelBoxWidth: 50
+        labelBoxHeight: 20
