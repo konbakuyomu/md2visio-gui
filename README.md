@@ -1,6 +1,6 @@
 # md2visio-gui - 一款更易用的 Mermaid 转 Visio 工具
 
-![GUI界面截图](https://raw.githubusercontent.com/konbakuyomu/md2visio-gui/main/assets/gui-screenshot.png)  <!-- 请将此处的URL替换为您自己的截图URL -->
+![GUI界面截图](https://img-cdn.ccrui.cn/2025/06/23/68582f169e159.png)
 
 这是一个基于 .NET 8 和 Windows Forms 的桌面应用程序，它可以将您用 Mermaid.js 语法编写的图表，轻松转换为 Microsoft Visio 的 `.vsdx` 格式文件。
 
