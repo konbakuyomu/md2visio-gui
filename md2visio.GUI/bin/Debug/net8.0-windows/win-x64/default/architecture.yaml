@@ -1,0 +1,7 @@
+config:
+    # mermaid.mermaidAPI.defaultConfig.architecture
+    architecture:
+        useMaxWidth: true
+        padding: 40
+        iconSize: 80
+        fontSize: 16

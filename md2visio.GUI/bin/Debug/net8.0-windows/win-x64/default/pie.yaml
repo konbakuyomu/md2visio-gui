@@ -1,0 +1,6 @@
+config:
+    # mermaid.mermaidAPI.defaultConfig.pie
+    pie:
+        useMaxWidth: true
+        textPosition: 0.75
+        useWidth: 984

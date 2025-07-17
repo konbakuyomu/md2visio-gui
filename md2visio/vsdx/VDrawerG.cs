@@ -214,6 +214,7 @@ namespace md2visio.vsdx
             SetFillForegnd(shape, "config.themeVariables.secondaryColor");
             SetLineColor(shape, "config.themeVariables.secondaryBorderColor");
             SetTextColor(shape, "config.themeVariables.secondaryTextColor");
+            shape.CellsU["LineWeight"].FormulaU = "0.75 pt";
             visioApp.DoCmd((short)VisUICmds.visCmdObjectSendToBack);
             gSubgraph.VisioShape = shape;
 
@@ -264,11 +265,11 @@ namespace md2visio.vsdx
             // line type
             switch (edge.LineType)
             {
-                case "-": shape.CellsU["LineWeight"].FormulaU = "=0.25 pt"; break;
+                case "-": shape.CellsU["LineWeight"].FormulaU = "=0.75 pt"; break;
                 case "=": shape.CellsU["LineWeight"].FormulaU = "=0.75 pt"; break;
                 case ".": shape.CellsU["LinePattern"].FormulaU = "=2"; break;
                 case "~": shape.CellsU["LinePattern"].FormulaU = "=0"; break;
-                default: shape.CellsU["LineWeight"].FormulaU = "=0.25 pt"; break;
+                default: shape.CellsU["LineWeight"].FormulaU = "=0.75 pt"; break;
             }
 
             // start tag
@@ -292,6 +293,9 @@ namespace md2visio.vsdx
                 case ">": shape.CellsU["EndArrow"].FormulaU = "=4"; break;
                 default: shape.CellsU["EndArrow"].FormulaU = "=0"; break;
             }
+            
+            // 设置连接线颜色
+            SetLineColor(shape, "config.themeVariables.defaultLinkColor");
         }
 
 

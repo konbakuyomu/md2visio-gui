@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "net8.0-windows7.0": {
-      "Microsoft.NET.ILLink.Tasks/8.0.17": {
+      "Microsoft.NET.ILLink.Tasks/8.0.18": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -162,7 +162,7 @@
       }
     },
     "net8.0-windows7.0/win-x64": {
-      "Microsoft.NET.ILLink.Tasks/8.0.17": {
+      "Microsoft.NET.ILLink.Tasks/8.0.18": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -317,10 +317,10 @@
     }
   },
   "libraries": {
-    "Microsoft.NET.ILLink.Tasks/8.0.17": {
-      "sha512": "x5/y4l8AtshpBOrCZdlE4txw8K3e3s9meBFeZeR3l8hbbku2V7kK6ojhXvrbjg1rk3G+JqL1BI26gtgc1ZrdUw==",
+    "Microsoft.NET.ILLink.Tasks/8.0.18": {
+      "sha512": "OiXqr2YIBEV9dsAWEtasK470ALyJ0VxJ9k4MotOxlWV6HeEgrJKYMW4HHj1OCCXvqE0/A25wEKPkpfiBARgDZA==",
       "type": "package",
-      "path": "microsoft.net.illink.tasks/8.0.17",
+      "path": "microsoft.net.illink.tasks/8.0.18",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -334,7 +334,7 @@
         "build/Microsoft.NET.ILLink.Analyzers.props",
         "build/Microsoft.NET.ILLink.Tasks.props",
         "build/Microsoft.NET.ILLink.targets",
-        "microsoft.net.illink.tasks.8.0.17.nupkg.sha512",
+        "microsoft.net.illink.tasks.8.0.18.nupkg.sha512",
         "microsoft.net.illink.tasks.nuspec",
         "tools/net472/ILLink.Tasks.dll",
         "tools/net472/ILLink.Tasks.dll.config",
@@ -581,7 +581,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
-      "Microsoft.NET.ILLink.Tasks >= 8.0.17",
+      "Microsoft.NET.ILLink.Tasks >= 8.0.18",
       "md2visio >= 1.0.0"
     ]
   },
@@ -592,11 +592,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\visio转换\\md2visio\\md2visio.GUI\\md2visio.GUI.csproj",
+      "projectUniqueName": "D:\\GitHub_repository\\md2visio\\md2visio.GUI\\md2visio.GUI.csproj",
       "projectName": "md2visio.GUI",
-      "projectPath": "D:\\visio转换\\md2visio\\md2visio.GUI\\md2visio.GUI.csproj",
+      "projectPath": "D:\\GitHub_repository\\md2visio\\md2visio.GUI\\md2visio.GUI.csproj",
       "packagesPath": "C:\\Users\\dxt98\\.nuget\\packages\\",
-      "outputPath": "D:\\visio转换\\md2visio\\md2visio.GUI\\obj\\",
+      "outputPath": "D:\\GitHub_repository\\md2visio\\md2visio.GUI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -617,8 +617,8 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "D:\\visio转换\\md2visio\\md2visio\\md2visio.csproj": {
-              "projectPath": "D:\\visio转换\\md2visio\\md2visio\\md2visio.csproj"
+            "D:\\GitHub_repository\\md2visio\\md2visio\\md2visio.csproj": {
+              "projectPath": "D:\\GitHub_repository\\md2visio\\md2visio\\md2visio.csproj"
             }
           }
         }
@@ -642,7 +642,7 @@
           "Microsoft.NET.ILLink.Tasks": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "[8.0.17, )",
+            "version": "[8.0.18, )",
             "autoReferenced": true
           }
         },
@@ -660,15 +660,15 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
-            "version": "[8.0.17, 8.0.17]"
+            "version": "[8.0.18, 8.0.18]"
           },
           {
             "name": "Microsoft.NETCore.App.Runtime.win-x64",
-            "version": "[8.0.17, 8.0.17]"
+            "version": "[8.0.18, 8.0.18]"
           },
           {
             "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
-            "version": "[8.0.17, 8.0.17]"
+            "version": "[8.0.18, 8.0.18]"
           }
         ],
         "frameworkReferences": {
@@ -679,7 +679,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {

@@ -23,6 +23,11 @@ namespace md2visio.vsdx.@base
         {
             if (config.GetString(configPath, out string sColor))
             {
+                if (sColor.Trim().ToLower() == "transparent")
+                {
+                    SetShapeSheet(shape, "FillPattern", "0");
+                    return;
+                }
                 SetFillForegnd(shape, VColor.Create(sColor));
             }
         }

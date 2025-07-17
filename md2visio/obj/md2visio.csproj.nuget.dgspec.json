@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\visio转换\\md2visio\\md2visio\\md2visio.csproj": {}
+    "D:\\GitHub_repository\\md2visio\\md2visio\\md2visio.csproj": {}
   },
   "projects": {
-    "D:\\visio转换\\md2visio\\md2visio\\md2visio.csproj": {
+    "D:\\GitHub_repository\\md2visio\\md2visio\\md2visio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\visio转换\\md2visio\\md2visio\\md2visio.csproj",
+        "projectUniqueName": "D:\\GitHub_repository\\md2visio\\md2visio\\md2visio.csproj",
         "projectName": "md2visio",
-        "projectPath": "D:\\visio转换\\md2visio\\md2visio\\md2visio.csproj",
+        "projectPath": "D:\\GitHub_repository\\md2visio\\md2visio\\md2visio.csproj",
         "packagesPath": "C:\\Users\\dxt98\\.nuget\\packages\\",
-        "outputPath": "D:\\visio转换\\md2visio\\md2visio\\obj\\",
+        "outputPath": "D:\\GitHub_repository\\md2visio\\md2visio\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -83,7 +83,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
