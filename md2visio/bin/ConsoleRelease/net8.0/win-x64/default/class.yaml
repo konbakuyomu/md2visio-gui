@@ -1,0 +1,4 @@
+config:
+    # mermaid.mermaidAPI.defaultConfig.class
+    class:
+        hideEmptyMembersBox: false

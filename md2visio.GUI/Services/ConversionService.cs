@@ -102,8 +102,24 @@ namespace md2visio.GUI.Services
 
                 ReportProgress(80, "生成Visio文件...");
 
-                // 查找生成的文件
-                var outputFiles = Directory.GetFiles(outputDir, "*.vsdx");
+                // 根据输出路径类型选择不同的文件检查策略
+                string[] outputFiles;
+                if (!string.IsNullOrEmpty(fileName))
+                {
+                    // 文件模式：检查指定的文件是否存在
+                    string expectedFile = Path.Combine(outputDir, fileName);
+                    if (!expectedFile.EndsWith(".vsdx", StringComparison.OrdinalIgnoreCase))
+                        expectedFile += ".vsdx";
+                    
+                    ReportLog($"检查输出文件: {expectedFile}");
+                    outputFiles = File.Exists(expectedFile) ? new[] { expectedFile } : new string[0];
+                }
+                else
+                {
+                    // 目录模式：查找目录中的所有 .vsdx 文件
+                    ReportLog($"在目录中查找 .vsdx 文件: {outputDir}");
+                    outputFiles = Directory.GetFiles(outputDir, "*.vsdx");
+                }
                 
                 ReportProgress(100, "转换完成!");
 
@@ -118,7 +134,8 @@ namespace md2visio.GUI.Services
                 }
                 else
                 {
-                    return ConversionResult.Error("转换完成但未找到输出文件");
+                    ReportLog($"未找到输出文件。输出路径: {outputPath}, 文件名: {fileName ?? "无"}");
+                    return ConversionResult.Error("转换完成但未找到输出文件。请检查输出路径和权限设置。");
                 }
             }
             catch (NotImplementedException ex)

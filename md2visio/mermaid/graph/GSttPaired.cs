@@ -53,7 +53,7 @@ namespace md2visio.mermaid.graph
         }
 
         static Regex regShapeClose =
-            new(@"^(\]{1,2}|\}{1,2}|\){1,3}|\)\]|\\\]|/\]|\]\))$", RegexOptions.Compiled);
+            new(@"^(\]{1,2}|\}{1,2}|\){1,3}|\)\]|\\\]|/\]|\]\)|\]\))$", RegexOptions.Compiled);
         bool IsShapeClose(string fragment)
         {
             return regShapeClose.IsMatch(fragment);

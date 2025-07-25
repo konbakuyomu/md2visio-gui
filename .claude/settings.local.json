@@ -1,8 +1,22 @@
 {
   "permissions": {
     "allow": [
-      "Bash(cp:*)"
+      "Bash(cp:*)",
+      "mcp__firecrawl__firecrawl_search",
+      "Bash(\"md2visio\\bin\\ConsoleRelease\\net8.0\\win-x64\\md2visio.exe\" /I \"test_stadium.md\" /O \"test_stadium_output.vsdx\" /Y /V)",
+      "Bash(\"md2visio\\bin\\ConsoleRelease\\net8.0\\win-x64\\md2visio.exe\" /I \"simple_test.md\" /O \"simple_output.vsdx\" /Y)",
+      "Bash(dir)",
+      "Bash(\"md2visio\\bin\\ConsoleRelease\\net8.0\\win-x64\\md2visio.exe\" /I test.md /O test_output.vsdx /Y)",
+      "Bash(ls:*)",
+      "Bash(\"md2visio\\bin\\ConsoleRelease\\net8.0\\win-x64\\md2visio.exe\" /I simple_test.md /O simple_output.vsdx /Y /D)",
+      "Bash(\"md2visio\\bin\\ConsoleRelease\\net8.0\\win-x64\\md2visio.exe\" /I \"md2visio\\test\\graph.md\" /O \"graph_output.vsdx\" /Y)"
     ],
     "deny": []
-  }
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "graphiti-memory",
+    "context7",
+    "firecrawl-mcp"
+  ]
 }

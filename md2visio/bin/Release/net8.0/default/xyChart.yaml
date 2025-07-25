@@ -1,0 +1,49 @@
+config:
+    # mermaid.mermaidAPI.defaultConfig.xyChart
+    xyChart: 
+        backgroundColor: white
+        titleColor: '#131300'
+        xAxisTitleColor: '#131300'
+        xAxisLabelColor: '#131300'
+        xAxisTickColor: '#131300'
+        xAxisLineColor: '#131300'
+        yAxisTitleColor: '#131300'
+        yAxisLabelColor: '#131300'
+        yAxisTickColor: '#131300'
+        yAxisLineColor: '#131300'
+        plotColorPalette: >-
+           #ECECFF,#8493A6,#FFC3A0,#DCDDE1,#B8E994,#D1A36F,#C3CDE6,#FFB6C1,#496078,#F8F3E3
+        useMaxWidth: true
+        width: 700
+        height: 500
+        titleFontSize: 20
+        titlePadding: 10
+        showTitle: true
+        xAxis:
+          $ref: '#/$defs/XYChartAxisConfig'
+          showLabel: true
+          labelFontSize: 14
+          labelPadding: 5
+          showTitle: true
+          titleFontSize: 16
+          titlePadding: 5
+          showTick: true
+          tickLength: 5
+          tickWidth: 2
+          showAxisLine: true
+          axisLineWidth: 2
+        yAxis:
+          $ref: '#/$defs/XYChartAxisConfig'
+          showLabel: true
+          labelFontSize: 14
+          labelPadding: 5
+          showTitle: true
+          titleFontSize: 16
+          titlePadding: 5
+          showTick: true
+          tickLength: 5
+          tickWidth: 2
+          showAxisLine: true
+          axisLineWidth: 2
+        chartOrientation: vertical
+        plotReservedSpacePercent: 50

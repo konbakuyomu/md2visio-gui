@@ -82,24 +82,59 @@ namespace md2visio.struc.figure
                 outputFilePath = $"{dir}\\{name}{count++}.vsdx";
             }
 
+            // 添加调试日志
+            if (md2visio.main.AppConfig.Instance.Debug)
+            {
+                Console.WriteLine($"[DEBUG] 构建图表: {figureType}");
+                Console.WriteLine($"[DEBUG] 输出模式: {(isFileMode ? "文件模式" : "目录模式")}");
+                Console.WriteLine($"[DEBUG] 输出路径: {outputFilePath}");
+                Console.WriteLine($"[DEBUG] 输出目录: {dir}");
+                Console.WriteLine($"[DEBUG] 文件名: {name}");
+            }
+
             method?.Invoke(obj, new object[] { outputFilePath });
+
+            // 验证文件是否成功生成
+            if (md2visio.main.AppConfig.Instance.Debug)
+            {
+                if (File.Exists(outputFilePath))
+                {
+                    Console.WriteLine($"[DEBUG] ✅ 文件生成成功: {outputFilePath}");
+                }
+                else
+                {
+                    Console.WriteLine($"[DEBUG] ❌ 文件生成失败: {outputFilePath}");
+                }
+            }
         }
 
         void InitOutputPath()
         {
-            if (outputFile.ToLower().EndsWith(".vsdx") || File.Exists(outputFile)) // file
+            // 优先检查是否指定了具体的 .vsdx 文件路径
+            if (outputFile.ToLower().EndsWith(".vsdx"))
             {
+                // 文件模式：用户指定了具体的输出文件名
                 isFileMode = true;
                 name = Path.GetFileNameWithoutExtension(outputFile);
                 dir = Path.GetDirectoryName(outputFile);
+                
+                // 确保输出目录存在
+                if (!string.IsNullOrEmpty(dir) && !Directory.Exists(dir))
+                {
+                    Directory.CreateDirectory(dir);
+                }
             }
-            else // directory
+            else if (Directory.Exists(outputFile))
             {
+                // 目录模式：用户指定了输出目录
                 isFileMode = false;
-                if (!Directory.Exists(outputFile))
-                    throw new FileNotFoundException($"output path doesn't exist: '{outputFile}'");
                 name = Path.GetFileNameWithoutExtension(iter.Context.InputFile);
                 dir = Path.GetFullPath(outputFile).TrimEnd(new char[] { '/', '\\' });
+            }
+            else
+            {
+                // 既不是 .vsdx 文件也不是存在的目录
+                throw new ArgumentException($"输出路径无效: '{outputFile}'。请指定一个 .vsdx 文件路径或现有目录。");
             }
         }
     }

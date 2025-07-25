@@ -1,0 +1,28 @@
+config:
+  # mermaid.mermaidAPI.defaultConfig
+  theme: default
+  look: classic
+  handDrawnSeed: 0
+  layout: dagre
+  maxTextSize: 50000
+  maxEdges: 500
+  logLevel: 5
+  securityLevel: strict
+  startOnLoad: true
+  arrowMarkerAbsolute: false
+  secure:
+    - secure
+    - securityLevel
+    - startOnLoad
+    - maxTextSize
+    - suppressErrorRendering
+    - maxEdges
+  legacyMathML: false
+  forceLegacyMathML: false
+  deterministicIds: false
+
+  markdownAutoWrap: true
+  suppressErrorRendering: false
+  elk:
+    mergeEdges: false
+    nodePlacementStrategy: BRANDES_KOEPF

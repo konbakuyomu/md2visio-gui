@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "graphiti-memory": {
+      "type": "sse",
+      "url": "http://154.9.255.246:8000/sse"
+    },
+    "context7": {
+      "command": "cmd",
+      "args": ["/c", "npx", "-y", "@upstash/context7-mcp@latest"]
+    },
+    "firecrawl-mcp": {
+      "command": "cmd",
+      "args": ["/c", "npx", "-y", "firecrawl-mcp"],
+      "env": {
+        "FIRECRAWL_API_KEY": "fc-b111707fab9c4680a1b47871db5e563f"
+      }
+    }
+  }
+}

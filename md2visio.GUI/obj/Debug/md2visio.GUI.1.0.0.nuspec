@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>md2visio.GUI</id>
+    <version>1.0.0</version>
+    <authors>md2visio.GUI</authors>
+    <description>Package Description</description>
+    <repository type="git" commit="75e9038761a6d70c38a45da1a8421ccda04da2be" />
+    <dependencies>
+      <group targetFramework="net8.0-windows7.0">
+        <dependency id="md2visio" version="1.0.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net8.0-windows7.0">
+        <frameworkReference name="Microsoft.WindowsDesktop.App.WindowsForms" />
+      </group>
+    </frameworkReferences>
+  </metadata>
+  <files>
+    <file src="D:\GitHub_repository\md2visio\md2visio.GUI\bin\Debug\net8.0-windows\win-x64\md2visio.GUI.runtimeconfig.json" target="lib\net8.0-windows7.0\md2visio.GUI.runtimeconfig.json" />
+    <file src="D:\GitHub_repository\md2visio\md2visio.GUI\bin\Debug\net8.0-windows\win-x64\md2visio.GUI.dll" target="lib\net8.0-windows7.0\md2visio.GUI.dll" />
+  </files>
+</package>

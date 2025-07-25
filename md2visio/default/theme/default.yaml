@@ -6,10 +6,10 @@ config:
         background: "white"             # Used to calculate color for items that should either be background colored or contrasting to the background
         fontFamily: "trebuchet ms, verdana, arial"
         fontSize: "16px"                # Font size in pixels
-        primaryColor: "#ECECFF"         # Color to be used as background in nodes, other colors will be derived from this
-        primaryTextColor: "#131300"     # Color to be used as text color in nodes using primaryColor
+        primaryColor: "#FFFFFF"         # Color to be used as background in nodes, other colors will be derived from this
+        primaryTextColor: "#000000"     # Color to be used as text color in nodes using primaryColor
         secondaryColor: "transparent"    
-        primaryBorderColor: "hsl(240, 60%, 86.2745098039%)"          # Color to be used as border in nodes using primaryColor
+        primaryBorderColor: "#000000"          # Color to be used as border in nodes using primaryColor
         secondaryBorderColor: "#000000"         # Color to be used as border in nodes using secondaryColor
         secondaryTextColor: "#000021"                                # Color to be used as text color in nodes using secondaryColor
         tertiaryColor: "hsl(80, 100%, 96.2745098039%)"    

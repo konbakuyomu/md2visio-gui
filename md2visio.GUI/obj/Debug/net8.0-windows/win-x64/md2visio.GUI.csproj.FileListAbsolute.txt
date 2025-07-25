@@ -1026,3 +1026,4 @@ D:\GitHub_repository\md2visio\md2visio.GUI\obj\Debug\net8.0-windows\win-x64\refi
 D:\GitHub_repository\md2visio\md2visio.GUI\obj\Debug\net8.0-windows\win-x64\md2visio.GUI.pdb
 D:\GitHub_repository\md2visio\md2visio.GUI\obj\Debug\net8.0-windows\win-x64\md2visio.GUI.genruntimeconfig.cache
 D:\GitHub_repository\md2visio\md2visio.GUI\obj\Debug\net8.0-windows\win-x64\ref\md2visio.GUI.dll
+D:\GitHub_repository\md2visio\md2visio.GUI\bin\Debug\net8.0-windows\win-x64\default\theme\default.yaml.backup

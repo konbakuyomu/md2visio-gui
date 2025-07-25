@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "U0g29dRMFsk=",
+  "dgSpecHash": "KsTP0KeUYNs=",
   "success": true,
   "projectFilePath": "D:\\GitHub_repository\\md2visio\\md2visio\\md2visio.csproj",
   "expectedPackageFiles": [
@@ -12,7 +12,10 @@
     "C:\\Users\\dxt98\\.nuget\\packages\\wondercircuits.microsoft.office.core\\15.0.0\\wondercircuits.microsoft.office.core.15.0.0.nupkg.sha512",
     "C:\\Users\\dxt98\\.nuget\\packages\\wondercircuits.microsoft.office.interop.visio\\15.0.0\\wondercircuits.microsoft.office.interop.visio.15.0.0.nupkg.sha512",
     "C:\\Users\\dxt98\\.nuget\\packages\\wondercircuits.microsoft.vbe.interop\\15.0.0\\wondercircuits.microsoft.vbe.interop.15.0.0.nupkg.sha512",
-    "C:\\Users\\dxt98\\.nuget\\packages\\yamldotnet\\16.3.0\\yamldotnet.16.3.0.nupkg.sha512"
+    "C:\\Users\\dxt98\\.nuget\\packages\\yamldotnet\\16.3.0\\yamldotnet.16.3.0.nupkg.sha512",
+    "C:\\Users\\dxt98\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\8.0.18\\microsoft.netcore.app.runtime.win-x64.8.0.18.nupkg.sha512",
+    "C:\\Users\\dxt98\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\8.0.18\\microsoft.windowsdesktop.app.runtime.win-x64.8.0.18.nupkg.sha512",
+    "C:\\Users\\dxt98\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\8.0.18\\microsoft.aspnetcore.app.runtime.win-x64.8.0.18.nupkg.sha512"
   ],
   "logs": []
 }

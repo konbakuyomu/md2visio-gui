@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\visio转换\\md2visio\\md2visio.GUI\\md2visio.GUI.csproj": {}
+    "D:\\GitHub_repository\\md2visio\\md2visio.GUI\\md2visio.GUI.csproj": {}
   },
   "projects": {
-    "D:\\visio转换\\md2visio\\md2visio.GUI\\md2visio.GUI.csproj": {
+    "D:\\GitHub_repository\\md2visio\\md2visio.GUI\\md2visio.GUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\visio转换\\md2visio\\md2visio.GUI\\md2visio.GUI.csproj",
+        "projectUniqueName": "D:\\GitHub_repository\\md2visio\\md2visio.GUI\\md2visio.GUI.csproj",
         "projectName": "md2visio.GUI",
-        "projectPath": "D:\\visio转换\\md2visio\\md2visio.GUI\\md2visio.GUI.csproj",
+        "projectPath": "D:\\GitHub_repository\\md2visio\\md2visio.GUI\\md2visio.GUI.csproj",
         "packagesPath": "C:\\Users\\dxt98\\.nuget\\packages\\",
-        "outputPath": "D:\\visio转换\\md2visio\\md2visio.GUI\\obj\\publish\\win-x64\\",
+        "outputPath": "D:\\GitHub_repository\\md2visio\\md2visio.GUI\\obj\\publish\\win-x64\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "D:\\visio转换\\md2visio\\md2visio\\md2visio.csproj": {
-                "projectPath": "D:\\visio转换\\md2visio\\md2visio\\md2visio.csproj"
+              "D:\\GitHub_repository\\md2visio\\md2visio\\md2visio.csproj": {
+                "projectPath": "D:\\GitHub_repository\\md2visio\\md2visio\\md2visio.csproj"
               }
             }
           }
@@ -57,7 +57,7 @@
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.17, )",
+              "version": "[8.0.18, )",
               "autoReferenced": true
             }
           },
@@ -75,15 +75,15 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
-              "version": "[8.0.17, 8.0.17]"
+              "version": "[8.0.18, 8.0.18]"
             },
             {
               "name": "Microsoft.NETCore.App.Runtime.win-x64",
-              "version": "[8.0.17, 8.0.17]"
+              "version": "[8.0.18, 8.0.18]"
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
-              "version": "[8.0.17, 8.0.17]"
+              "version": "[8.0.18, 8.0.18]"
             }
           ],
           "frameworkReferences": {
@@ -94,7 +94,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {
@@ -103,14 +103,14 @@
         }
       }
     },
-    "D:\\visio转换\\md2visio\\md2visio\\md2visio.csproj": {
+    "D:\\GitHub_repository\\md2visio\\md2visio\\md2visio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\visio转换\\md2visio\\md2visio\\md2visio.csproj",
+        "projectUniqueName": "D:\\GitHub_repository\\md2visio\\md2visio\\md2visio.csproj",
         "projectName": "md2visio",
-        "projectPath": "D:\\visio转换\\md2visio\\md2visio\\md2visio.csproj",
+        "projectPath": "D:\\GitHub_repository\\md2visio\\md2visio\\md2visio.csproj",
         "packagesPath": "C:\\Users\\dxt98\\.nuget\\packages\\",
-        "outputPath": "D:\\visio转换\\md2visio\\md2visio\\obj\\",
+        "outputPath": "D:\\GitHub_repository\\md2visio\\md2visio\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -180,15 +180,15 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
-              "version": "[8.0.17, 8.0.17]"
+              "version": "[8.0.18, 8.0.18]"
             },
             {
               "name": "Microsoft.NETCore.App.Runtime.win-x64",
-              "version": "[8.0.17, 8.0.17]"
+              "version": "[8.0.18, 8.0.18]"
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
-              "version": "[8.0.17, 8.0.17]"
+              "version": "[8.0.18, 8.0.18]"
             }
           ],
           "frameworkReferences": {
@@ -196,7 +196,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {

@@ -1,0 +1,6 @@
+config:
+    # mermaid.mermaidAPI.defaultConfig.mindmap
+    mindmap:
+        useMaxWidth: true
+        padding: 10
+        maxNodeWidth: 200

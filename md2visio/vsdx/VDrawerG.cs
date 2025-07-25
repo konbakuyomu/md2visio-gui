@@ -81,6 +81,7 @@ namespace md2visio.vsdx
                 SetFillForegnd(shape, "config.themeVariables.primaryColor");
                 SetLineColor(shape, "config.themeVariables.primaryBorderColor");
                 SetTextColor(shape, "config.themeVariables.primaryTextColor");
+                shape.CellsU["LineWeight"].FormulaU = "0.75 pt";
                 PauseForViewing(100); // 样式设置后暂停
                 
                 if (alignBound.IsEmpty()) alignBound = new VShapeBoundary(shape);
