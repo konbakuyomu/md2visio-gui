@@ -1,4 +1,5 @@
 using md2visio.Api;
+using md2visio.Localization;
 using Microsoft.Win32;
 using Visio = Microsoft.Office.Interop.Visio;
 
@@ -38,7 +39,7 @@ namespace md2visio.vsdx.@base
             {
                 if (!CanWriteOutputFile(outputFile, out string? reason))
                 {
-                    _context.SetError(reason ?? "输出文件不可写入。");
+                    _context.SetError(reason ?? CoreStrings.Get("OutputFileNotWritable"));
                     visioDoc.Saved = true;
                     _session.CloseDocument(visioDoc);
                     return;
@@ -55,28 +56,11 @@ namespace md2visio.vsdx.@base
 
         bool CanWriteOutputFile(string outputFile, out string? reason)
         {
-            reason = null;
-            if (!File.Exists(outputFile)) return true;
-
-            try
-            {
-                using var stream = new FileStream(
-                    outputFile,
-                    FileMode.Open,
-                    FileAccess.ReadWrite,
-                    FileShare.None);
-                return true;
-            }
-            catch (UnauthorizedAccessException)
-            {
-                reason = $"输出文件被占用或只读，无法写入：{outputFile}";
-                return false;
-            }
-            catch (IOException)
-            {
-                reason = $"输出文件正在被其他程序占用，请关闭后重试：{outputFile}";
-                return false;
-            }
+            var status = OutputFileAccess.Check(outputFile);
+            reason = status == OutputFileStatus.Writable
+                ? null
+                : OutputFileAccess.GetMessage(status, outputFile);
+            return status == OutputFileStatus.Writable;
         }
 
         public static string? GetVisioContentDirectory()

@@ -95,6 +95,16 @@ namespace md2visio.Api
                 return ConversionResult.Failed(CoreStrings.Get("InputMustBeMarkdown"));
             }
 
+            // Fail before Visio startup/rendering when an explicitly named output file
+            // cannot be overwritten. The final save repeats this check to cover races.
+            if (request.SilentOverwrite &&
+                request.OutputPath.EndsWith(".vsdx", StringComparison.OrdinalIgnoreCase))
+            {
+                var outputStatus = OutputFileAccess.Check(request.OutputPath);
+                if (outputStatus != OutputFileStatus.Writable)
+                    return ConversionResult.Failed(OutputFileAccess.GetMessage(outputStatus, request.OutputPath));
+            }
+
             // 确保输出目录存在
             string? outputDir = request.OutputPath.EndsWith(".vsdx", StringComparison.OrdinalIgnoreCase)
                 ? Path.GetDirectoryName(request.OutputPath)
