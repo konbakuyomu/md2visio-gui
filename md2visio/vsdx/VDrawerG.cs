@@ -4,6 +4,7 @@ using md2visio.struc.figure;
 using md2visio.struc.graph;
 using md2visio.vsdx.@base;
 using Microsoft.Office.Interop.Visio;
+using System.Globalization;
 
 namespace md2visio.vsdx
 {
@@ -25,13 +26,97 @@ namespace md2visio.vsdx
         {
             EnsureVisible(); // 确保Visio可见
             PauseForViewing(300); // 给用户时间看到初始状态
-            
-            DrawNodes(figure);
+
+            DrawCompoundGraph();
             PauseForViewing(500); // 节点绘制完成后暂停
             
             DrawEdges(figure);
             PauseForViewing(300); // 边绘制完成后暂停
         }        
+
+        void DrawCompoundGraph()
+        {
+            var nodes = figure.NodeDict.Values
+                .OfType<GNode>()
+                .Where(node => node is not GBorderNode)
+                .Distinct()
+                .ToList();
+            var subgraphs = EnumerateSubgraphs(figure).ToList();
+
+            foreach (var node in nodes)
+            {
+                Shape shape = CreateShape(node);
+                SetFillForegnd(shape, "config.themeVariables.primaryColor");
+                SetLineColor(shape, "config.themeVariables.primaryBorderColor");
+                SetTextColor(shape, "config.themeVariables.primaryTextColor");
+                shape.CellsU["LineWeight"].FormulaU = "0.75 pt";
+                PostProcessShape(node, shape);
+            }
+
+            var layoutNodes = nodes.Select((node, order) => new LayoutNode(
+                node.ID,
+                node.Container is GSubgraph parent ? parent.ID : null,
+                Width(node.VisioShape!),
+                Height(node.VisioShape!),
+                order)).ToList();
+            var layoutGroups = subgraphs.Select((group, order) => new LayoutGroup(
+                group.ID,
+                group.Parent is GSubgraph parent ? parent.ID : null,
+                group.Direction,
+                order)).ToList();
+            var layoutEdges = nodes
+                .SelectMany(node => node.OutputEdges)
+                .Distinct()
+                .Select(edge => new LayoutEdge(edge.From.ID, edge.To.ID))
+                .ToList();
+
+            var layout = CompoundGraphLayout.Calculate(layoutNodes, layoutGroups, layoutEdges, figure.Direction);
+            foreach (var node in nodes)
+            {
+                if (node.VisioShape == null || !layout.Nodes.TryGetValue(node.ID, out var rect)) continue;
+                MoveTo(node.VisioShape, rect.CenterX, rect.CenterY);
+                drawnList.AddLast(node);
+                drawnSet.Add(node);
+            }
+
+            // Inner borders first, then parents, so every border can be sent behind its content.
+            foreach (var subgraph in subgraphs.AsEnumerable().Reverse())
+            {
+                if (layout.Groups.TryGetValue(subgraph.ID, out var rect))
+                    DrawSubgraphBorder(subgraph, rect);
+            }
+        }
+
+        static IEnumerable<GSubgraph> EnumerateSubgraphs(Graph graph)
+        {
+            foreach (var subgraph in graph.Subgraphs)
+            {
+                yield return subgraph;
+                foreach (var nested in EnumerateSubgraphs(subgraph)) yield return nested;
+            }
+        }
+
+        GNode DrawSubgraphBorder(GSubgraph subGraph, LayoutRect rect)
+        {
+            GNode node = subGraph.BorderNode;
+            Shape shape = CreateShape(node);
+            shape.CellsU["Width"].FormulaU = Invariant(rect.Width);
+            shape.CellsU["Height"].FormulaU = Invariant(rect.Height);
+            shape.CellsU["PinX"].FormulaU = Invariant(rect.CenterX);
+            shape.CellsU["PinY"].FormulaU = Invariant(rect.CenterY);
+            shape.CellsU["FillPattern"].FormulaU = "0";
+            shape.CellsU["VerticalAlign"].FormulaU = "0";
+            shape.Text = subGraph.Label;
+            SetFillForegnd(shape, "config.themeVariables.secondaryColor");
+            SetLineColor(shape, "config.themeVariables.secondaryBorderColor");
+            SetTextColor(shape, "config.themeVariables.secondaryTextColor");
+            shape.CellsU["LineWeight"].FormulaU = "0.75 pt";
+            visioApp.DoCmd((short)VisUICmds.visCmdObjectSendToBack);
+            subGraph.VisioShape = shape;
+            return node;
+        }
+
+        static string Invariant(double value) => value.ToString("0.###############", CultureInfo.InvariantCulture);
 
         void DrawNodes(Graph graph)
         {
@@ -231,9 +316,10 @@ namespace md2visio.vsdx
                     Shape shape = CreateEdge(edge);
                     if (!TryGlueEdge(edge, shape, node.VisioShape, edge.To.VisioShape))
                     {
-                        VisAutoConnectDir dir = ResolveAutoConnectDir(node.VisioShape, edge.To.VisioShape);
-                        node.VisioShape.AutoConnect(edge.To.VisioShape, dir, shape);
-                        shape.Delete();
+                        // AutoConnect is intentionally avoided here: Visio may reposition both
+                        // endpoint shapes and destroy the compound graph layout.
+                        shape.CellsU["BeginX"].GlueTo(node.VisioShape.CellsU["PinX"]);
+                        shape.CellsU["EndX"].GlueTo(edge.To.VisioShape.CellsU["PinX"]);
                     }
                     drawnEdges.Add(edge);
                     PauseForViewing(100); // 每条边绘制后暂停
@@ -450,8 +536,6 @@ namespace md2visio.vsdx
 
         bool TryGlueEdge(GEdge edge, Shape connector, Shape from, Shape to)
         {
-            if (edge.From.NodeShape.Shape != "tri" && edge.To.NodeShape.Shape != "tri") return false;
-
             VisAutoConnectDir dir = ResolveAutoConnectDir(from, to);
             int fromRow = FindBestConnectionRow(from, dir);
             int toRow = FindBestConnectionRow(to, OppositeDir(dir));
