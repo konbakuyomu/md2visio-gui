@@ -220,7 +220,7 @@ namespace md2visio.GUI.Forms
 
             // 输出目录
             var outputDirLabel = new Label { Text = UiStrings.Get("OutputDirectory"), TextAlign = ContentAlignment.MiddleRight, Dock = DockStyle.Fill, Font = SystemFonts.MessageBoxFont };
-            _outputDirTextBox = new TextBox { Text = Environment.GetFolderPath(Environment.SpecialFolder.Desktop), Dock = DockStyle.Fill, Font = UiFont(9) };
+            _outputDirTextBox = new TextBox { Text = OutputDirectorySettings.Load(), Dock = DockStyle.Fill, Font = UiFont(9) };
             _selectDirButton = new Button { Text = UiStrings.Get("SelectDirectory"), Dock = DockStyle.Fill, Margin = new Padding(5, 0, 0, 0), Font = SystemFonts.MessageBoxFont };
 
             // 文件名
@@ -555,6 +555,7 @@ namespace md2visio.GUI.Forms
             if (dialog.ShowDialog() == DialogResult.OK)
             {
                 _outputDirTextBox.Text = dialog.SelectedPath;
+                OutputDirectorySettings.Save(dialog.SelectedPath);
             }
         }
 
@@ -571,6 +572,8 @@ namespace md2visio.GUI.Forms
                 MessageBox.Show(UiStrings.Get("ChooseOutputFirst"), UiStrings.Get("Notice"), MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
+
+            OutputDirectorySettings.Save(_outputDirTextBox.Text);
 
             SetUIBusy(true);
 
@@ -749,6 +752,7 @@ namespace md2visio.GUI.Forms
 
         protected override void OnFormClosing(FormClosingEventArgs e)
         {
+            OutputDirectorySettings.Save(_outputDirTextBox.Text);
             // 释放服务持有的资源，例如Visio COM对象
             _conversionService.Dispose();
             base.OnFormClosing(e);
