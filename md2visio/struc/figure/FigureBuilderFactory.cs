@@ -1,5 +1,6 @@
 using md2visio.mermaid.cmn;
 using md2visio.Api;
+using md2visio.Localization;
 using md2visio.vsdx.@base;
 using System.Reflection;
 
@@ -79,8 +80,8 @@ namespace md2visio.struc.figure
             // 检查是否找到任何 mermaid 块
             if (iter.Context?.StateList == null || iter.Context.StateList.Count == 0)
             {
-                _context.Log("警告: 文件中未找到任何 mermaid 代码块");
-                _context.Log("提示: 请确保使用 ```mermaid ... ``` 格式包裹图表代码");
+                _context.Log(CoreStrings.Get("NoMermaidBlocks"));
+                _context.Log(CoreStrings.Get("MermaidBlockHint"));
                 return;
             }
 
@@ -106,7 +107,7 @@ namespace md2visio.struc.figure
                         // 检查是否实现
                         if (!builderDict.ContainsKey(word))
                         {
-                            _context.Log($"警告: 图表类型 '{word}' 暂未支持，已跳过");
+                            _context.Log(CoreStrings.Format("UnsupportedSkipped", word));
                             if (!unsupportedTypes.Contains(word))
                                 unsupportedTypes.Add(word);
 
@@ -133,16 +134,16 @@ namespace md2visio.struc.figure
             // 汇总信息
             if (figuresBuilt == 0)
             {
-                _context.Log("警告: 未构建任何图表");
+                _context.Log(CoreStrings.Get("NoDiagramsBuilt"));
                 if (unsupportedTypes.Count > 0)
                 {
-                    _context.Log($"发现 {unsupportedTypes.Count} 个不支持的图表类型: {string.Join(", ", unsupportedTypes)}");
-                    _context.Log($"当前支持的类型: {GetSupportedTypesString()}");
+                    _context.Log(CoreStrings.Format("UnsupportedFound", unsupportedTypes.Count, string.Join(", ", unsupportedTypes)));
+                    _context.Log(CoreStrings.Format("SupportedTypes", GetSupportedTypesString()));
                 }
             }
             else
             {
-                _context.Log($"成功构建 {figuresBuilt} 个图表");
+                _context.Log(CoreStrings.Format("DiagramsBuilt", figuresBuilt));
             }
         }
 
@@ -286,7 +287,7 @@ namespace md2visio.struc.figure
             }
             else
             {
-                throw new ArgumentException($"输出路径无效: '{outputFile}'。请指定一个 .vsdx 文件路径或现有目录。");
+                throw new ArgumentException(CoreStrings.Format("InvalidOutputPath", outputFile));
             }
         }
     }

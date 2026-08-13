@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms</value></resheader>
+  <data name="AppTitle" xml:space="preserve"><value>md2visio - Mermaid 转 Visio 工具</value></data>
+  <data name="HeaderTitle" xml:space="preserve"><value>📄 md2visio - Mermaid 转 Visio 工具</value></data>
+  <data name="Language" xml:space="preserve"><value>语言:</value></data>
+  <data name="English" xml:space="preserve"><value>English</value></data>
+  <data name="Chinese" xml:space="preserve"><value>中文</value></data>
+  <data name="InputFile" xml:space="preserve"><value>📁 输入文件</value></data>
+  <data name="DropHint" xml:space="preserve"><value>将 .md 文件拖拽到此处或点击浏览选择</value></data>
+  <data name="BrowseFiles" xml:space="preserve"><value>浏览文件...</value></data>
+  <data name="NoFileSelected" xml:space="preserve"><value>未选择文件</value></data>
+  <data name="SelectedFile" xml:space="preserve"><value>选中文件: {0}</value></data>
+  <data name="OutputSettings" xml:space="preserve"><value>📂 输出设置</value></data>
+  <data name="OutputDirectory" xml:space="preserve"><value>输出目录:</value></data>
+  <data name="SelectDirectory" xml:space="preserve"><value>选择目录...</value></data>
+  <data name="FileName" xml:space="preserve"><value>文件名:</value></data>
+  <data name="ConversionOptions" xml:space="preserve"><value>⚙️ 转换选项</value></data>
+  <data name="ShowVisio" xml:space="preserve"><value>显示 Visio 窗口</value></data>
+  <data name="SilentOverwrite" xml:space="preserve"><value>静默覆盖文件</value></data>
+  <data name="SupportedTypes" xml:space="preserve"><value>📊 支持的图表类型</value></data>
+  <data name="Flowchart" xml:space="preserve"><value>✅ 流程图</value></data>
+  <data name="PieChart" xml:space="preserve"><value>✅ 饼图</value></data>
+  <data name="UserJourney" xml:space="preserve"><value>✅ 用户旅程图</value></data>
+  <data name="PacketDiagram" xml:space="preserve"><value>✅ 数据包图</value></data>
+  <data name="XYChart" xml:space="preserve"><value>✅ XY图表</value></data>
+  <data name="SequenceDiagram" xml:space="preserve"><value>✅ 时序图</value></data>
+  <data name="EntityRelationshipDiagram" xml:space="preserve"><value>✅ 实体关系图</value></data>
+  <data name="ConversionLog" xml:space="preserve"><value>📝 转换日志</value></data>
+  <data name="ClearLog" xml:space="preserve"><value>清空日志</value></data>
+  <data name="StartConversion" xml:space="preserve"><value>🚀 开始转换</value></data>
+  <data name="CheckVisio" xml:space="preserve"><value>🔍 检查 Visio</value></data>
+  <data name="OpenOutput" xml:space="preserve"><value>📁 打开输出目录</value></data>
+  <data name="Exit" xml:space="preserve"><value>❌ 退出</value></data>
+  <data name="Ready" xml:space="preserve"><value>就绪</value></data>
+  <data name="Converting" xml:space="preserve"><value>转换中...</value></data>
+  <data name="Error" xml:space="preserve"><value>错误</value></data>
+  <data name="Notice" xml:space="preserve"><value>提示</value></data>
+  <data name="Success" xml:space="preserve"><value>成功</value></data>
+  <data name="InvalidMarkdown" xml:space="preserve"><value>请选择 .md 文件！</value></data>
+  <data name="MarkdownFilter" xml:space="preserve"><value>Markdown 文件|*.md|所有文件|*.*</value></data>
+  <data name="SelectMarkdown" xml:space="preserve"><value>选择 Markdown 文件</value></data>
+  <data name="SelectOutputFolder" xml:space="preserve"><value>选择输出目录</value></data>
+  <data name="ChooseInputFirst" xml:space="preserve"><value>请先选择要转换的文件！</value></data>
+  <data name="ChooseOutputFirst" xml:space="preserve"><value>请选择输出目录！</value></data>
+  <data name="ConversionSucceeded" xml:space="preserve"><value>转换成功！&#xA;生成了 {0} 个文件。</value></data>
+  <data name="ConversionFailed" xml:space="preserve"><value>转换失败！&#xA;错误: {0}</value></data>
+  <data name="ConversionException" xml:space="preserve"><value>转换过程中发生错误:&#xA;{0}</value></data>
+  <data name="DetectedTypes" xml:space="preserve"><value>检测到图表类型: {0}</value></data>
+  <data name="CheckingVisio" xml:space="preserve"><value>正在检查 Visio 环境...</value></data>
+  <data name="VisioCheckPassed" xml:space="preserve"><value>✅ Visio 环境检查通过！&#xA;&#xA;{0}</value></data>
+  <data name="VisioCheckSucceededTitle" xml:space="preserve"><value>环境检查成功</value></data>
+  <data name="VisioAvailable" xml:space="preserve"><value>Visio 环境正常</value></data>
+  <data name="VisioCheckFailed" xml:space="preserve"><value>❌ Visio 环境检查失败！&#xA;&#xA;{0}</value></data>
+  <data name="VisioCheckFailedTitle" xml:space="preserve"><value>环境检查失败</value></data>
+  <data name="VisioUnavailable" xml:space="preserve"><value>Visio 环境异常</value></data>
+  <data name="CheckException" xml:space="preserve"><value>检查过程中发生异常：&#xA;{0}</value></data>
+  <data name="ExceptionTitle" xml:space="preserve"><value>异常</value></data>
+  <data name="CheckFailed" xml:space="preserve"><value>检查异常</value></data>
+</root>

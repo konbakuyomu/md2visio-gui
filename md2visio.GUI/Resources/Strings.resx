@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms</value></resheader>
+  <data name="AppTitle" xml:space="preserve"><value>md2visio - Mermaid to Visio Converter</value></data>
+  <data name="HeaderTitle" xml:space="preserve"><value>📄 md2visio - Mermaid to Visio Converter</value></data>
+  <data name="Language" xml:space="preserve"><value>Language:</value></data>
+  <data name="English" xml:space="preserve"><value>English</value></data>
+  <data name="Chinese" xml:space="preserve"><value>中文</value></data>
+  <data name="InputFile" xml:space="preserve"><value>📁 Input file</value></data>
+  <data name="DropHint" xml:space="preserve"><value>Drop a .md file here or click Browse</value></data>
+  <data name="BrowseFiles" xml:space="preserve"><value>Browse...</value></data>
+  <data name="NoFileSelected" xml:space="preserve"><value>No file selected</value></data>
+  <data name="SelectedFile" xml:space="preserve"><value>Selected file: {0}</value></data>
+  <data name="OutputSettings" xml:space="preserve"><value>📂 Output settings</value></data>
+  <data name="OutputDirectory" xml:space="preserve"><value>Output folder:</value></data>
+  <data name="SelectDirectory" xml:space="preserve"><value>Select folder...</value></data>
+  <data name="FileName" xml:space="preserve"><value>File name:</value></data>
+  <data name="ConversionOptions" xml:space="preserve"><value>⚙️ Conversion options</value></data>
+  <data name="ShowVisio" xml:space="preserve"><value>Show Visio window</value></data>
+  <data name="SilentOverwrite" xml:space="preserve"><value>Overwrite files without prompting</value></data>
+  <data name="SupportedTypes" xml:space="preserve"><value>📊 Supported diagram types</value></data>
+  <data name="Flowchart" xml:space="preserve"><value>✅ Flowchart</value></data>
+  <data name="PieChart" xml:space="preserve"><value>✅ Pie chart</value></data>
+  <data name="UserJourney" xml:space="preserve"><value>✅ User journey</value></data>
+  <data name="PacketDiagram" xml:space="preserve"><value>✅ Packet diagram</value></data>
+  <data name="XYChart" xml:space="preserve"><value>✅ XY chart</value></data>
+  <data name="SequenceDiagram" xml:space="preserve"><value>✅ Sequence diagram</value></data>
+  <data name="EntityRelationshipDiagram" xml:space="preserve"><value>✅ Entity relationship diagram</value></data>
+  <data name="ConversionLog" xml:space="preserve"><value>📝 Conversion log</value></data>
+  <data name="ClearLog" xml:space="preserve"><value>Clear log</value></data>
+  <data name="StartConversion" xml:space="preserve"><value>🚀 Convert</value></data>
+  <data name="CheckVisio" xml:space="preserve"><value>🔍 Check Visio</value></data>
+  <data name="OpenOutput" xml:space="preserve"><value>📁 Open output folder</value></data>
+  <data name="Exit" xml:space="preserve"><value>❌ Exit</value></data>
+  <data name="Ready" xml:space="preserve"><value>Ready</value></data>
+  <data name="Converting" xml:space="preserve"><value>Converting...</value></data>
+  <data name="Error" xml:space="preserve"><value>Error</value></data>
+  <data name="Notice" xml:space="preserve"><value>Notice</value></data>
+  <data name="Success" xml:space="preserve"><value>Success</value></data>
+  <data name="InvalidMarkdown" xml:space="preserve"><value>Please select a .md file.</value></data>
+  <data name="MarkdownFilter" xml:space="preserve"><value>Markdown files|*.md|All files|*.*</value></data>
+  <data name="SelectMarkdown" xml:space="preserve"><value>Select a Markdown file</value></data>
+  <data name="SelectOutputFolder" xml:space="preserve"><value>Select an output folder</value></data>
+  <data name="ChooseInputFirst" xml:space="preserve"><value>Select a file to convert first.</value></data>
+  <data name="ChooseOutputFirst" xml:space="preserve"><value>Select an output folder.</value></data>
+  <data name="ConversionSucceeded" xml:space="preserve"><value>Conversion succeeded!&#xA;Generated {0} file(s).</value></data>
+  <data name="ConversionFailed" xml:space="preserve"><value>Conversion failed!&#xA;Error: {0}</value></data>
+  <data name="ConversionException" xml:space="preserve"><value>An error occurred during conversion:&#xA;{0}</value></data>
+  <data name="DetectedTypes" xml:space="preserve"><value>Detected diagram types: {0}</value></data>
+  <data name="CheckingVisio" xml:space="preserve"><value>Checking the Visio environment...</value></data>
+  <data name="VisioCheckPassed" xml:space="preserve"><value>✅ Visio environment check passed!&#xA;&#xA;{0}</value></data>
+  <data name="VisioCheckSucceededTitle" xml:space="preserve"><value>Environment check passed</value></data>
+  <data name="VisioAvailable" xml:space="preserve"><value>Visio is available</value></data>
+  <data name="VisioCheckFailed" xml:space="preserve"><value>❌ Visio environment check failed!&#xA;&#xA;{0}</value></data>
+  <data name="VisioCheckFailedTitle" xml:space="preserve"><value>Environment check failed</value></data>
+  <data name="VisioUnavailable" xml:space="preserve"><value>Visio is unavailable</value></data>
+  <data name="CheckException" xml:space="preserve"><value>An error occurred during the check:&#xA;{0}</value></data>
+  <data name="ExceptionTitle" xml:space="preserve"><value>Unexpected error</value></data>
+  <data name="CheckFailed" xml:space="preserve"><value>Check failed</value></data>
+</root>

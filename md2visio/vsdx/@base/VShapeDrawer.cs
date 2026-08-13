@@ -172,7 +172,7 @@ namespace md2visio.vsdx.@base
         public static double ShapeSheet(Shape shape, string propName, string unit)
         {
             string sval = shape.CellsU[propName].ResultStr[unit];
-            return Convert.ToDouble(Regex.Replace(sval, unit + "| ", ""));
+            return VisioValueParser.ParseResult(sval);
         }
 
         public static double VisioUnit2MM(Shape shape)
@@ -272,7 +272,7 @@ namespace md2visio.vsdx.@base
         public static double FontSize(Shape shape, string unit)
         {
             string sval = shape.CellsU["Char.Size"].ResultStr[unit]; // pt, mm
-            return Convert.ToDouble(Regex.Replace(sval, unit + "| ", ""));
+            return VisioValueParser.ParseResult(sval);
         }
 
         public static double FontSize(Shape shape)
