@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms</value></resheader>
+  <data name="UnsupportedDiagram" xml:space="preserve"><value>Unsupported diagram type: {0}</value></data>
+  <data name="VisioComErrorDetail" xml:space="preserve"><value>Visio COM error: {0}</value></data>
+  <data name="VisioComError" xml:space="preserve"><value>Visio COM error. Make sure Microsoft Visio is installed correctly.</value></data>
+  <data name="ConversionFailed" xml:space="preserve"><value>Conversion failed: {0}</value></data>
+  <data name="ConversionFailedTyped" xml:space="preserve"><value>Conversion failed: {0}: {1}</value></data>
+  <data name="ValidatingInput" xml:space="preserve"><value>Validating input...</value></data>
+  <data name="InputFile" xml:space="preserve"><value>Input file: {0}</value></data>
+  <data name="OutputPath" xml:space="preserve"><value>Output path: {0}</value></data>
+  <data name="InputMissing" xml:space="preserve"><value>Input file does not exist: {0}</value></data>
+  <data name="InputMustBeMarkdown" xml:space="preserve"><value>Input file must use the .md extension.</value></data>
+  <data name="CreatedOutputDirectory" xml:space="preserve"><value>Created output directory: {0}</value></data>
+  <data name="InitializingVisio" xml:space="preserve"><value>Initializing Visio...</value></data>
+  <data name="InitializingContext" xml:space="preserve"><value>Initializing conversion context...</value></data>
+  <data name="ParsingMermaid" xml:space="preserve"><value>Parsing Mermaid content...</value></data>
+  <data name="BuildingDiagram" xml:space="preserve"><value>Building diagram structure...</value></data>
+  <data name="RenderingVisio" xml:space="preserve"><value>Rendering to Visio...</value></data>
+  <data name="RenderingVisioFormat" xml:space="preserve"><value>Rendering in Visio format...</value></data>
+  <data name="SavingOutput" xml:space="preserve"><value>Saving output...</value></data>
+  <data name="ConversionComplete" xml:space="preserve"><value>Conversion complete!</value></data>
+  <data name="GeneratedFiles" xml:space="preserve"><value>Generated {0} file(s):</value></data>
+  <data name="UnsupportedTypesInFile" xml:space="preserve"><value>The file contains unsupported diagram types: {0}&#xA;Currently supported: {1}</value></data>
+  <data name="NoValidDiagram" xml:space="preserve"><value>No valid Mermaid diagram was found in the file.&#xA;Make sure diagram code is enclosed in a ```mermaid ... ``` block.</value></data>
+  <data name="NoOutputWarning" xml:space="preserve"><value>Conversion completed but no output file was found.</value></data>
+  <data name="NoOutputError" xml:space="preserve"><value>Conversion completed without generating an output file. Check the output path and permissions.</value></data>
+  <data name="StartingConversion" xml:space="preserve"><value>Starting conversion...</value></data>
+  <data name="OutputDirectory" xml:space="preserve"><value>Output directory: {0}</value></data>
+  <data name="PreparingEnvironment" xml:space="preserve"><value>Preparing the conversion environment...</value></data>
+  <data name="ExecutingCore" xml:space="preserve"><value>Running the core conversion...</value></data>
+  <data name="CoreComplete" xml:space="preserve"><value>Core conversion completed.</value></data>
+  <data name="UnknownError" xml:space="preserve"><value>Unknown error</value></data>
+  <data name="FeatureNotImplemented" xml:space="preserve"><value>Feature not implemented: {0}</value></data>
+  <data name="ComException" xml:space="preserve"><value>COM exception: {0} (HRESULT: 0x{1})</value></data>
+  <data name="ComExceptionHelp" xml:space="preserve"><value>A COM component error occurred. Possible causes:&#xA;1. Microsoft Visio is not installed or registered correctly&#xA;2. The Visio process is locked or lacks permission&#xA;3. A system COM component is damaged&#xA;Details: {0}</value></data>
+  <data name="ErrorType" xml:space="preserve"><value>Error type: {0}</value></data>
+  <data name="InnerException" xml:space="preserve"><value>Inner exception: {0}</value></data>
+  <data name="DetectTypesError" xml:space="preserve"><value>Error detecting diagram types: {0}</value></data>
+  <data name="CheckingVisio" xml:space="preserve"><value>Checking the Visio environment...</value></data>
+  <data name="VisioAvailableVersion" xml:space="preserve"><value>Visio is available, version: {0}</value></data>
+  <data name="VisioVersion" xml:space="preserve"><value>Visio version: {0}</value></data>
+  <data name="VisioUnavailableDetail" xml:space="preserve"><value>Visio is unavailable: {0}</value></data>
+  <data name="VisioCheckHelp" xml:space="preserve"><value>Visio environment check failed:&#xA;1. Confirm that Microsoft Visio is installed correctly&#xA;2. Check that Visio is registered correctly&#xA;3. Try starting Visio manually&#xA;Details: {0}</value></data>
+  <data name="EnvironmentCheckException" xml:space="preserve"><value>Environment check exception: {0}</value></data>
+  <data name="EnvironmentCheckFailed" xml:space="preserve"><value>Environment check failed: {0}</value></data>
+  <data name="NoMermaidBlocks" xml:space="preserve"><value>Warning: No Mermaid code blocks were found in the file.</value></data>
+  <data name="MermaidBlockHint" xml:space="preserve"><value>Tip: Enclose diagram code in a ```mermaid ... ``` block.</value></data>
+  <data name="UnsupportedSkipped" xml:space="preserve"><value>Warning: Diagram type '{0}' is not supported and was skipped.</value></data>
+  <data name="NoDiagramsBuilt" xml:space="preserve"><value>Warning: No diagrams were built.</value></data>
+  <data name="UnsupportedFound" xml:space="preserve"><value>Found {0} unsupported diagram type(s): {1}</value></data>
+  <data name="SupportedTypes" xml:space="preserve"><value>Currently supported types: {0}</value></data>
+  <data name="DiagramsBuilt" xml:space="preserve"><value>Successfully built {0} diagram(s).</value></data>
+  <data name="InvalidOutputPath" xml:space="preserve"><value>Invalid output path: '{0}'. Specify a .vsdx file path or an existing directory.</value></data>
+  <data name="VisioStartupTimeout" xml:space="preserve"><value>Visio automation did not respond within {0} seconds. Close any Visio dialogs or orphaned Visio processes, then restart md2visio before trying again.</value></data>
+  <data name="RestartAfterTimeout" xml:space="preserve"><value>Visio automation previously timed out. Restart md2visio before trying again.</value></data>
+  <data name="OutputFileNotWritable" xml:space="preserve"><value>The output file cannot be written.</value></data>
+  <data name="OutputFileInUse" xml:space="preserve"><value>The output file is open in another program. Close it and try again: {0}</value></data>
+  <data name="OutputFileAccessDenied" xml:space="preserve"><value>The output file is read-only or access was denied: {0}</value></data>
+</root>

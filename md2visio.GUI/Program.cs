@@ -1,4 +1,5 @@
 using md2visio.GUI.Forms;
+using md2visio.GUI.Localization;
 
 namespace md2visio.GUI;
 
@@ -10,6 +11,8 @@ internal static class Program
     [STAThread]
     static void Main()
     {
+        CultureSettings.ApplySavedCulture();
+
         // 确保COM线程模式
         System.Threading.Thread.CurrentThread.SetApartmentState(System.Threading.ApartmentState.STA);
         

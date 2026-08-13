@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms</value></resheader>
+  <data name="UnsupportedDiagram" xml:space="preserve"><value>不支持的图表类型: {0}</value></data>
+  <data name="VisioComErrorDetail" xml:space="preserve"><value>Visio COM 错误: {0}</value></data>
+  <data name="VisioComError" xml:space="preserve"><value>Visio COM 错误，请确保 Microsoft Visio 已正确安装。</value></data>
+  <data name="ConversionFailed" xml:space="preserve"><value>转换失败: {0}</value></data>
+  <data name="ConversionFailedTyped" xml:space="preserve"><value>转换失败: {0}: {1}</value></data>
+  <data name="ValidatingInput" xml:space="preserve"><value>验证输入...</value></data>
+  <data name="InputFile" xml:space="preserve"><value>输入文件: {0}</value></data>
+  <data name="OutputPath" xml:space="preserve"><value>输出路径: {0}</value></data>
+  <data name="InputMissing" xml:space="preserve"><value>输入文件不存在: {0}</value></data>
+  <data name="InputMustBeMarkdown" xml:space="preserve"><value>输入文件必须是 .md 格式</value></data>
+  <data name="CreatedOutputDirectory" xml:space="preserve"><value>创建输出目录: {0}</value></data>
+  <data name="InitializingVisio" xml:space="preserve"><value>初始化 Visio...</value></data>
+  <data name="InitializingContext" xml:space="preserve"><value>初始化转换上下文...</value></data>
+  <data name="ParsingMermaid" xml:space="preserve"><value>解析 Mermaid 内容...</value></data>
+  <data name="BuildingDiagram" xml:space="preserve"><value>构建图表结构...</value></data>
+  <data name="RenderingVisio" xml:space="preserve"><value>渲染到 Visio...</value></data>
+  <data name="RenderingVisioFormat" xml:space="preserve"><value>渲染到 Visio 格式...</value></data>
+  <data name="SavingOutput" xml:space="preserve"><value>保存输出...</value></data>
+  <data name="ConversionComplete" xml:space="preserve"><value>转换完成!</value></data>
+  <data name="GeneratedFiles" xml:space="preserve"><value>生成 {0} 个文件:</value></data>
+  <data name="UnsupportedTypesInFile" xml:space="preserve"><value>文件中包含不支持的图表类型: {0}&#xA;当前支持: {1}</value></data>
+  <data name="NoValidDiagram" xml:space="preserve"><value>文件中未找到有效的 Mermaid 图表。&#xA;请确保使用 ```mermaid ... ``` 格式包裹图表代码。</value></data>
+  <data name="NoOutputWarning" xml:space="preserve"><value>转换完成但未找到输出文件。</value></data>
+  <data name="NoOutputError" xml:space="preserve"><value>转换完成但未生成输出文件。请检查输出路径和权限设置。</value></data>
+  <data name="StartingConversion" xml:space="preserve"><value>开始转换...</value></data>
+  <data name="OutputDirectory" xml:space="preserve"><value>输出目录: {0}</value></data>
+  <data name="PreparingEnvironment" xml:space="preserve"><value>准备转换环境...</value></data>
+  <data name="ExecutingCore" xml:space="preserve"><value>开始执行核心转换逻辑...</value></data>
+  <data name="CoreComplete" xml:space="preserve"><value>核心转换逻辑执行完成</value></data>
+  <data name="UnknownError" xml:space="preserve"><value>未知错误</value></data>
+  <data name="FeatureNotImplemented" xml:space="preserve"><value>功能未实现: {0}</value></data>
+  <data name="ComException" xml:space="preserve"><value>COM异常: {0} (HRESULT: 0x{1})</value></data>
+  <data name="ComExceptionHelp" xml:space="preserve"><value>COM组件异常，可能的原因：&#xA;1. Microsoft Visio未正确安装或注册&#xA;2. Visio进程被锁定或权限不足&#xA;3. 系统COM组件损坏&#xA;详细错误: {0}</value></data>
+  <data name="ErrorType" xml:space="preserve"><value>异常类型: {0}</value></data>
+  <data name="InnerException" xml:space="preserve"><value>内部异常: {0}</value></data>
+  <data name="DetectTypesError" xml:space="preserve"><value>检测文件类型时出错: {0}</value></data>
+  <data name="CheckingVisio" xml:space="preserve"><value>正在检查Visio环境...</value></data>
+  <data name="VisioAvailableVersion" xml:space="preserve"><value>Visio可用，版本: {0}</value></data>
+  <data name="VisioVersion" xml:space="preserve"><value>Visio版本: {0}</value></data>
+  <data name="VisioUnavailableDetail" xml:space="preserve"><value>Visio不可用: {0}</value></data>
+  <data name="VisioCheckHelp" xml:space="preserve"><value>Visio环境检查失败：&#xA;1. 请确认Microsoft Visio已正确安装&#xA;2. 检查Visio是否已正确注册&#xA;3. 尝试手动启动Visio测试&#xA;错误详情: {0}</value></data>
+  <data name="EnvironmentCheckException" xml:space="preserve"><value>环境检查异常: {0}</value></data>
+  <data name="EnvironmentCheckFailed" xml:space="preserve"><value>环境检查失败: {0}</value></data>
+  <data name="NoMermaidBlocks" xml:space="preserve"><value>警告: 文件中未找到任何 mermaid 代码块</value></data>
+  <data name="MermaidBlockHint" xml:space="preserve"><value>提示: 请确保使用 ```mermaid ... ``` 格式包裹图表代码</value></data>
+  <data name="UnsupportedSkipped" xml:space="preserve"><value>警告: 图表类型 '{0}' 暂未支持，已跳过</value></data>
+  <data name="NoDiagramsBuilt" xml:space="preserve"><value>警告: 未构建任何图表</value></data>
+  <data name="UnsupportedFound" xml:space="preserve"><value>发现 {0} 个不支持的图表类型: {1}</value></data>
+  <data name="SupportedTypes" xml:space="preserve"><value>当前支持的类型: {0}</value></data>
+  <data name="DiagramsBuilt" xml:space="preserve"><value>成功构建 {0} 个图表</value></data>
+  <data name="InvalidOutputPath" xml:space="preserve"><value>输出路径无效: '{0}'。请指定一个 .vsdx 文件路径或现有目录。</value></data>
+  <data name="VisioStartupTimeout" xml:space="preserve"><value>Visio 自动化在 {0} 秒内没有响应。请关闭所有 Visio 对话框或残留的 Visio 进程，然后重新启动 md2visio 再试。</value></data>
+  <data name="RestartAfterTimeout" xml:space="preserve"><value>Visio 自动化此前已超时。请重新启动 md2visio 后再试。</value></data>
+  <data name="OutputFileNotWritable" xml:space="preserve"><value>输出文件不可写入。</value></data>
+  <data name="OutputFileInUse" xml:space="preserve"><value>输出文件正在被其他程序占用，请关闭后重试：{0}</value></data>
+  <data name="OutputFileAccessDenied" xml:space="preserve"><value>输出文件为只读或访问被拒绝：{0}</value></data>
+</root>

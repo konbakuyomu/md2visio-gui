@@ -30,6 +30,7 @@ namespace md2visio.struc.graph
         public GSubgraph(Graph parent) 
         {
             Parent = parent;
+            Direction = parent.Direction;
         }
         public Shape? VisioShape { 
             get => borderNode.VisioShape; 
